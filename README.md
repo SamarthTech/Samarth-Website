@@ -1,2 +1,3 @@
-# Samarth
-<a href="https://meghadri-koley.github.io/Samarth/" target="_balnk">link</a>
+## Samarth - Empowering the Youth
+
+<div align=center><a href="https://samarthtmsl.github.io/">Visit Our Website</a></div>
