@@ -2,6 +2,6 @@
 <h1>
 <a href="https://samarthtmsl.github.io/">Samarth - Empowering the Youth</a></h1>
 <a href="https://samarthtmsl.github.io/">
-<img src="website.svg"/>
+<img width=100% src="website.svg"/>
 </a>
 </div>
