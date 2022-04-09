@@ -1,0 +1,22 @@
+name: Metrics
+on:
+  schedule:
+    - cron: "0 */1 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Main Workflow 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Website
+        uses: lowlighter/metrics@latest
+        with:
+          filename: website.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_pagespeed: yes
+          plugin_pagespeed_screenshot: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: https://samarthtmsl.github.io/
