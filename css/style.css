@@ -6186,6 +6186,13 @@ button.bg-dark:focus {
 .my-5 {
   margin-top: 3rem !important; }
 
+@media(max-width:764px){
+  .mt-5{
+    margin-top: -22rem !important;
+    margin-bottom: -4rem !important;
+  }
+}
+
 .mr-5,
 .mx-5 {
   margin-right: 3rem !important; }
