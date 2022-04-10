@@ -68,6 +68,13 @@ body {
   text-align: left;
   background-color: #fff;
 }
+@media(max-width:764px){
+  .mt-5{
+    margin-top: -22rem !important;
+    margin-bottom: -4rem !important;
+  }
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
