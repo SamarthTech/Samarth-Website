@@ -53,7 +53,8 @@ html {
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
-html,body{
+
+  html,body{
   overflow-x: hidden;
 }
 body {
