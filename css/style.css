@@ -68,12 +68,7 @@ body {
   text-align: left;
   background-color: #fff;
 }
-@media(max-width:764px){
-  .mt-5{
-    margin-top: -22rem !important;
-    margin-bottom: -4rem !important;
-  }
-}
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -6194,7 +6189,12 @@ button.bg-dark:focus {
 .mt-5,
 .my-5 {
   margin-top: 3rem !important; }
-
+@media(max-width:764px){
+    .mt-5{
+      margin-top: -22rem !important;
+      margin-bottom: -4rem !important;
+    }
+  }
 .mr-5,
 .mx-5 {
   margin-right: 3rem !important; }
