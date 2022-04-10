@@ -6191,10 +6191,11 @@ button.bg-dark:focus {
   margin-top: 3rem !important; }
 @media(max-width:764px){
     .mt-5{
-      margin-top: -22rem !important;
+      margin-top: -16rem !important;
       margin-bottom: -4rem !important;
     }
   }
+
 .mr-5,
 .mx-5 {
   margin-right: 3rem !important; }
