@@ -76,7 +76,47 @@ body {
   position: fixed;
   z-index: 100;
 }
-
+/* *****************************Scroll Bar************************************** */
+/* Custom width for the Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+  }
+  /* Custom Track */
+  ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 0, 183);
+  border-radius: 10px;
+  background: #ff7eda;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: rgba(11, 229, 204, 0.797);
+  border-radius: 10px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgb(78, 1, 74);
+  }
+  /* Custom Button */
+  ::-webkit-scrollbar-button:single-button {
+  background-color:none;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+  }
+  /* Custom Up Direction Button */
+  ::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0px 8px 9px 8px;
+  border-color: transparent rgb(255, 8, 177);
+  border-radius: 10px;
+  }
+  /* Custom Down Direction Button */
+  ::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 0px 8px 9px 8px;
+  border-color: transparent rgb(255, 0, 179);
+  border-radius: 10px;
+  }
+/* ***************************************************************************** */
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
