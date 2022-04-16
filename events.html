@@ -407,9 +407,10 @@
   <script src="js/main.js"></script>
   <script>
     var loader=document.getElementById("preloader");
-    window.addEventListener("load",function(){
+    function load(){
       loader.style.display="none";
-    })
+    }
+    setTimeout(load,5000);
   </script>
   </body>
 </html>
