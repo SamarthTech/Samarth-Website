@@ -68,14 +68,7 @@ body {
   text-align: left;
   background-color: #fff;
 }
-#preloader{
-  background: #000 url(../images/loader2.gif) no-repeat center center;
-  background-size: 25%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
+
 /* *****************************Scroll Bar************************************** */
 /* Custom width for the Scrollbar */
 ::-webkit-scrollbar {
