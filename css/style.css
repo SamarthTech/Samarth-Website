@@ -7418,9 +7418,9 @@ h1, h2, h3, h4, h5,
         .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator:before {
           display: none; } }
   .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-    color: #fff;
-    /* border: 1px solid var(--gray); */
-    background: #ee76ad;
+    color: var(--gray-dark);
+    border: 1px solid var(--gray);
+    /* background: #ee76ad; */
     padding-top: .5rem;
     padding-bottom: .5rem;
     padding-left: 20px;
@@ -7430,6 +7430,15 @@ h1, h2, h3, h4, h5,
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     border-radius: 30px; }
+    .ftco-navbar-light .navbar-nav > .nav-item.cta :hover{
+      background: -webkit-linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
+      border: 1px solid transparent;
+      transition: .4s ease-in-out;
+    }
+    .ftco-navbar-light .navbar-nav > .nav-item.cta > a :hover{
+      color: #fff;
+      transition: .2s ease-in-out;
+    }
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a span {
       display: inline-block; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
