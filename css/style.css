@@ -7431,12 +7431,13 @@ h1, h2, h3, h4, h5,
     -ms-border-radius: 30px;
     border-radius: 30px; }
     .ftco-navbar-light .navbar-nav > .nav-item.cta :hover{
-      background: -webkit-linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
+      background: linear-gradient(45deg, rgba(238,118,173,1) 0%, rgba(239,172,120,1) 100%);
       border: 1px solid transparent;
       transition: .4s ease-in-out;
     }
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a :hover{
       color: #fff;
+      border: none;
       transition: .2s ease-in-out;
     }
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a span {
