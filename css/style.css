@@ -8197,7 +8197,10 @@ textarea.form-control {
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 6em 0;}
+      .works{
+        margin: 0 1.5rem; }
+  }
 
 .ftco-bg-dark {
   background: #3c312e; }
@@ -8486,10 +8489,14 @@ textarea.form-control {
   .blog-entry .text {
     position: relative;
     border-top: 0;
+    margin-top: -10px;
+    margin-left: 0.5rem;
+    margin-right:4.6rem;
     border-radius: 2px; }
     .blog-entry .text .heading {
       font-size: 20px;
-      margin-bottom: 16px; }
+      margin-top: -10px;
+      margin-bottom: -12px; }
       .blog-entry .text .heading a {
         color: #404044; }
         .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {

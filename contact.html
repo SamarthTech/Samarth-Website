@@ -280,7 +280,10 @@
     //   loader.style.display="none";
     // }
     // setTimeout(load,5000);
-    $('#preloader').delay(3000).fadeOut("slow");
+    // $('#preloader').delay(3000).fadeOut("slow");
+    $(window).on("load", function () {
+        $("#preloader").fadeOut("slow");
+      });
   </script>
 
 
