@@ -8243,6 +8243,32 @@ textarea.form-control {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 50%;
     position: relative; }
+    .ftco-footer-social li a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #A9C9FF;
+      background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+      transition: .5s;
+      transform: scale(.9);
+      z-index: -1;
+    }
+    .ftco-footer-social li a:hover::before {
+      transform: scale(1.1);
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      /* background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% ); */
+      box-shadow: 0 0 15px rgba(37,249,245,1);
+    }
+    .ftco-footer-social li a:hover {
+      color: rgba(37,249,245,1);
+      box-shadow: 0 0 5px rgba(37,249,245,1);
+      text-shadow: 0 0 5px rgba(37,249,245,1);
+    }
     .ftco-footer-social li a span {
       position: absolute;
       font-size: 26px;
@@ -8375,7 +8401,14 @@ textarea.form-control {
   -ms-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
   -o-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
-  background: #fff;
+  /* background: #fff; */
+  /* background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
+  background-color: #ffebf3;
+  background-image: linear-gradient(327deg, #ffebf3 0%, #d2fffd 100%);
+  padding-bottom: 3rem !important;
+  padding: 3rem !important;
+  /* padding-top: 3rem !important; */
   display: block;
   border-radius: 20px;
   position: relative; }
