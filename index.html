@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--Testing PR-->
   <head>
     <title>Samarth - Empowering the Youth</title>
     <meta charset="utf-8">
@@ -25,7 +24,7 @@
     <link rel="shortcut icon" href="./images/SamarthWhite.png" type="image/x-icon">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type= "text/css" href="css/style.css">
   </head>
   <body>
 <!-- ************************************************************loader************************************************************ -->
@@ -84,6 +83,9 @@
 </div>
 <!-- ********************************************************************** -->
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <!-- div id = "progressbar"></div>
+    <div id = "scrollPath"></div -->
+
     <div class="container">
       <div class="samarth_logo"><img style="width: 50px;width: 100%;height: 50px;border-radius: 50%;padding: right 5px;padding-top: 2px;cursor: pointer;" src="images/SamarthBlack.png"></div>
       <div class="navbar-brand" style="cursor: pointer;">Samarth</div>
@@ -161,7 +163,7 @@
                       <!-- <div class="text p-4 d-flex align-items-center">
                         <div class="user d-flex align-items-center">
                           <div class="user-img mr-3" style="background-image: url(images/SamarthBlack.png);"></div>
-                          <!-- <h3>John Bruce <br><span class="position">Designer</span></h3> -->
+                          <h3>John Bruce <br><span class="position">Designer</span></h3> -->
                         <!-- </div> -->
                       <!-- </div> -->
                     </a>
@@ -817,7 +819,28 @@
       </svg>
   </div> -->
 
+  <!--<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function()
+    {
+      var scroll = $(window).scrollTop(),
+      dh = $(document).height(),
+      wh = $(window).height();
+      scrollPercent = (scroll / (dh-wh))*100;
+      $('#progressbar').css('height',scrollPercent + '%');
+    })
+  </script>-->
 
+  <!-- script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight-window.innerHeight;
+    window.onscroll = function()
+    {
+      let progressHeight = (window.pageYOffset / totalHeight)*100;
+      progress.style.height = progressHeight+"%"
+    }
+
+  </script-->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
