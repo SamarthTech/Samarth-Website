@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -33,6 +33,85 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background:linear-gradient(
+  45deg,
+  #06dee1,
+  #79ff6c
+  ) ;
+  border-radius: 3px;
+}
+
+
+/*
+#scrollPath
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;  
+  border-radius: 10px;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate
+{
+  0%,100%
+  {
+    filter: hue-rotate(0deg);
+  }
+  50%
+  {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top , #008aff, #00ffe7);
+  filter: blur(60px);
+}
+
+#progressbar:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top , #008aff, #00ffe7);
+  filter: blur(30px);
+}
+*/
 
 *,
 *::before,
@@ -69,29 +148,25 @@ body {
   background-color: #fff;
 }
 
-/* *****************************Scroll Bar************************************** */
-/* Custom width for the Scrollbar */
+/*
+
 ::-webkit-scrollbar {
   width: 12px;
   height: 20px;
 }
-/* Custom Track */
 ::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #81fcd76d;
   }
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background-color: #e83e8c;
     background-image:-webkit-linear-gradient(45deg,rgba(255, 255, 255, 0.175) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
     border-radius: 10px;
   }
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(255,136,10);
     background: linear-gradient(183deg, rgba(255,136,10,1) 0%, rgba(212,240,203,1) 49%, rgba(45,164,0,1) 100%);
   }
-  /* Custom Button */
   ::-webkit-scrollbar-button:single-button {
   background-color:#e83e8c;
   display: block;
@@ -99,13 +174,11 @@ body {
   height: 12px;
   width: 10px;
   }
-  /* Custom Up Direction Button */
   ::-webkit-scrollbar-button:single-button:vertical:decrement {
   border-width: 0px 8px 9px 8px;
   border-color: transparent;
   border-radius: 10px;
   }
-  /* Custom Down Direction Button */
   ::-webkit-scrollbar-button:single-button:vertical:increment {
   border-width: 0px 8px 9px 8px;
   border-color: transparent;
@@ -113,6 +186,7 @@ body {
   }
 /* ***************************************************************************** */
 /* ************************************* */
+
 @media(max-width:240px){
   .html{
     overflow-x: hidden;
@@ -8243,32 +8317,6 @@ textarea.form-control {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 50%;
     position: relative; }
-    .ftco-footer-social li a::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background-color: #A9C9FF;
-      background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
-      transition: .5s;
-      transform: scale(.9);
-      z-index: -1;
-    }
-    .ftco-footer-social li a:hover::before {
-      transform: scale(1.1);
-      /* background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
-      /* background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% ); */
-      box-shadow: 0 0 15px rgba(37,249,245,1);
-    }
-    .ftco-footer-social li a:hover {
-      color: rgba(37,249,245,1);
-      box-shadow: 0 0 5px rgba(37,249,245,1);
-      text-shadow: 0 0 5px rgba(37,249,245,1);
-    }
     .ftco-footer-social li a span {
       position: absolute;
       font-size: 26px;
@@ -8401,14 +8449,7 @@ textarea.form-control {
   -ms-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
   -o-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
-  /* background: #fff; */
-  /* background-color: #FFDEE9;
-  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
-  background-color: #ffebf3;
-  background-image: linear-gradient(327deg, #ffebf3 0%, #d2fffd 100%);
-  padding-bottom: 3rem !important;
-  padding: 3rem !important;
-  /* padding-top: 3rem !important; */
+  background: #fff;
   display: block;
   border-radius: 20px;
   position: relative; }
