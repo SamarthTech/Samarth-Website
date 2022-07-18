@@ -34,6 +34,28 @@
   --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
+#backtop {
+  /* (A) BOTTOM RIGHT CORNER */
+  position: fixed;
+  bottom: 20px; right: 20px;
+  z-index: 999;
+
+  /* (B) HIDDEN BY DEFAULT */
+  visibility: none;
+  opacity: 0;
+
+  /* (C) COSMETICS */
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+/* (D) SHOW BUTTON */
+#backtop.show {
+  visibility: visible;
+  opacity: 1;
+
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
