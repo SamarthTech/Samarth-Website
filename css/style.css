@@ -38,7 +38,7 @@
   /* (A) BOTTOM RIGHT CORNER */
   position: fixed;
   bottom: 20px; right: 20px;
-  z-index: 999;
+  z-index: 99;
 
   /* (B) HIDDEN BY DEFAULT */
   visibility: none;
@@ -47,6 +47,25 @@
   /* (C) COSMETICS */
   cursor: pointer;
   transition: opacity 0.3s;
+
+  /* Styling icon */
+  background-color: #3a3a3a;
+  color: #fff;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  /* line-height: 25px; */
+  vertical-align: middle;
+  padding: 8px;
+}
+
+/* effect */
+#backtop:hover{
+  font-size: 30px;
+  color: rgb(83, 255, 255);
+  transition:all .3s ease-in-out; 
 }
 
 /* (D) SHOW BUTTON */
