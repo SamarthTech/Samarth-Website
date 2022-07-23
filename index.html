@@ -27,8 +27,11 @@
     <link rel="stylesheet" type= "text/css" href="css/style.css">
   </head>
   <body>
+    <div class="loader">
+      <img src="images/load-gif.gif" alt="">
+    </div>
 <!-- ************************************************************loader************************************************************ -->
-<div id="preloader" class="preloader">
+<!--div id="preloader" class="preloader">
   <main class="loader">
     <div class="preloader__wheel-wrapper">
       <div class="preloader__wheel">
@@ -80,7 +83,7 @@
       </div>
     </div>
   </main>
-</div>
+</div-->
 <!-- ********************************************************************** -->
 <i class="fa-solid fa-arrow-up" id="backtop" onclick="totop()"></i>
 <!-- <i class="fa-solid fa-circle-caret-up"></i> -->
@@ -864,13 +867,13 @@
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
   <!-- <script src="js/google-map.js"></script> -->
   <script src="js/main.js"></script>
-  <script>
+  <script src="js/pre.js"></script> 
     // var loader=document.getElementById("preloader");
     // function load(){
     //   loader.style.display="none";
     // }
     // setTimeout(load,5000);
-    $('#preloader').delay(5000).fadeOut("slow");
-  </script>  
+    //$('#preloader').delay(5000).fadeOut("slow");
+   
   </body>
 </html>
