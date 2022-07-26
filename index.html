@@ -4,8 +4,9 @@
     <title>Samarth - Empowering the Youth</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+    <!--New loader Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -20,161 +21,11 @@
 
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/SamarthWhite.png" type="image/x-icon">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!--New loader Css-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-      type="text/javascript"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <style>
-
-      #content {
-        margin: 0 auto;
-        padding-bottom: 50px;
-        width: 80%;
-        max-width: 978px;
-      }
-
-      h1 {
-        font-size: 40px;
-      }
-
-      /* The Loader */
-      #loader-wrapper {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
-        overflow: hidden;
-      }
-      .no-js #loader-wrapper {
-        display: none;
-      }
-
-      #loader {
-        display: block;
-        position: relative;
-        left: 50%;
-        top: 50%;
-        width: 150px;
-        height: 150px;
-        margin: -75px 0 0 -75px;
-        border-radius: 50%;
-        border: 3px solid transparent;
-        border-top-color: #16a085;
-        -webkit-animation: spin 1.7s linear infinite;
-        animation: spin 1.7s linear infinite;
-        z-index: 11;
-      }
-      #loader:before {
-        content: "";
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        right: 5px;
-        bottom: 5px;
-        border-radius: 50%;
-        border: 3px solid transparent;
-        border-top-color: #e74c3c;
-        -webkit-animation: spin-reverse 0.6s linear infinite;
-        animation: spin-reverse 0.6s linear infinite;
-      }
-      #loader:after {
-        content: "";
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        right: 15px;
-        bottom: 15px;
-        border-radius: 50%;
-        border: 3px solid transparent;
-        border-top-color: #f9c922;
-        -webkit-animation: spin 1s linear infinite;
-        animation: spin 1s linear infinite;
-      }
-
-      @-webkit-keyframes spin {
-        0% {
-          -webkit-transform: rotate(0deg);
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-        }
-      }
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-      @-webkit-keyframes spin-reverse {
-        0% {
-          -webkit-transform: rotate(0deg);
-        }
-        100% {
-          -webkit-transform: rotate(-360deg);
-        }
-      }
-      @keyframes spin-reverse {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(-360deg);
-        }
-      }
-      #loader-wrapper .loader-section {
-        position: fixed;
-        top: 0;
-        width: 51%;
-        height: 100%;
-        background: #222;
-        z-index: 10;
-      }
-
-      #loader-wrapper .loader-section.section-left {
-        left: 0;
-      }
-
-      #loader-wrapper .loader-section.section-right {
-        right: 0;
-      }
-
-      /* Loaded styles */
-      .loaded #loader-wrapper .loader-section.section-left {
-        transform: translateX(-100%);
-        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-      }
-
-      .loaded #loader-wrapper .loader-section.section-right {
-        transform: translateX(100%);
-        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-      }
-
-      .loaded #loader {
-        opacity: 0;
-        transition: all 0.3s ease-out;
-      }
-
-      .loaded #loader-wrapper {
-        visibility: hidden;
-        transform: translateY(-100%);
-        transition: all 0.3s 1s ease-out;
-      }
-    </style>
-
+    <link rel="stylesheet" type= "text/css" href="css/style.css">
     <script>
       window.console = window.console || function (t) {};
     </script>
@@ -190,18 +41,83 @@
     <!--New loader Css-->
     <div id="loader-wrapper">
       <div id="loader"></div>
-
       <div class="loader-section section-left"></div>
       <div class="loader-section section-right"></div>
     </div>
     <!--New loader Css-->
-    
+   <!-- ************************************************************loader************************************************************ --> <div class="loader" id="preloader">
+      <!-- main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div-->
+<!-- div id="preloader" class="preloader">
+  <main class="loader">
+    <div class="preloader__wheel-wrapper">
+      <div class="preloader__wheel">
+        <span class="preloader__content">l</span>
+        <div class="preloader__inner-wheel"></div>
+        <div class="preloader__second-inner-whell"></div>
+      </div>
+    </div>
+    <div class="preloader__wheel-wrapper">
+      <div class="preloader__wheel">
+        <span class="preloader__content">o</span>
+        <div class="preloader__inner-wheel"></div>
+        <div class="preloader__second-inner-whell"></div>
+      </div>
+    </div>
+    <div class="preloader__wheel-wrapper">
+      <div class="preloader__wheel">
+        <span class="preloader__content">a</span>
+        <div class="preloader__inner-wheel"></div>
+        <div class="preloader__second-inner-whell"></div>
+      </div>
+    </div>
+    <div class="preloader__wheel-wrapper">
+      <div class="preloader__wheel">
+        <span class="preloader__content">d</span>
+        <div class="preloader__inner-wheel"></div>
+        <div class="preloader__second-inner-whell"></div>
+      </div>
+    </div>
+    <div class="preloader__wheel-wrapper">
+      <div class="preloader__wheel">
+        <span class="preloader__content">i</span>
+        <div class="preloader__inner-wheel"></div>
+        <div class="preloader__second-inner-whell"></div>
+      </div>
+    </div>
+    <div class="preloader__wheel-wrapper">
+      <div class="preloader__wheel">
+        <span class="preloader__content">n</span>
+        <div class="preloader__inner-wheel"></div>
+        <div class="preloader__second-inner-whell"></div>
+      </div>
+    </div>
+    <div class="preloader__wheel-wrapper">
+      <div class="preloader__wheel">
+        <span class="preloader__content">g</span>
+        <div class="preloader__inner-wheel"></div>
+        <div class="preloader__second-inner-whell"></div>
+      </div>
+    </div>
+  </main>
+</div -->
+<!-- ********************************************************************** -->
+<i class="fa-solid fa-arrow-up" id="backtop" onclick="totop()"></i>
+<!-- <i class="fa-solid fa-circle-caret-up"></i> -->
+<!-- <img src="images/up-button2.png" id="backtop" onclick="totop()"/> -->
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <!-- div id = "progressbar"></div>
+    <div id = "scrollPath"></div -->
+
     <div class="container">
-      <a href="index.html" ><img style="width: 40px;width: 100%;height: 40px;image-rendering: pixelated;image-resolution: 300dpi;" src="images/SamarthWhite.png"></a>
-      <a class="navbar-brand" href="index.html">Samarth-TMSL</a>
+      <div class="samarth_logo"><img style="width: 50px;width: 100%;height: 50px;border-radius: 50%;padding: right 5px;padding-top: 2px;cursor: pointer;" src="images/SamarthBlack.png"></div>
+      <div class="navbar-brand" style="cursor: pointer;">Samarth</div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
+        <span class="oi oi-menu"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
@@ -210,6 +126,11 @@
           <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
           <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
           <li class="nav-item dropdown">
+            <!-- <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Know Us</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="portfolio.html">Team Samarth</a>
+                <a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a>
+              </div> -->
           </li>
           <li class="nav-item"><a href="#work" class="nav-link">Works</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -241,11 +162,11 @@
         <div class="row no-gutters d-flex align-items-center" data-scrollax=" properties: { translateY: '-30%'}">
 
           <div class="col-md-3 mb-3">
-            <a style="cursor: pointer;" class="featured-img">
+            <a style="cursor: auto;" class="featured-img">
               <div class="text-1 p-4 d-flex align-items-center">
                 <h3>Graphic Art Design<br><span class="tag"></span></h3>
               </div>
-              <img src="images/image_1.jpg" class="img-fluid" alt="">
+              <img src="images/work-6.jpg" class="img-fluid" alt="">
               <div class="text p-4 d-flex align-items-center">
                 <div class="user d-flex align-items-center">
                   <div class="user-img mr-3" style="background-image: url(images/SamarthBlack.png);"></div>
@@ -261,26 +182,26 @@
                 <div class="row no-gutters d-flex align-items-end">
 
                   <div class="col-md-8">
-                    <a style="cursor: pointer;" class="featured-img">
+                    <a style="cursor: auto;" class="featured-img">
                       <div class="text-1 p-4 d-flex align-items-center">
-                        <h3>Research<br><span class="tag">Grooming & Mentorship</span></h3>
+                        <h3>SAFALYA'22<br><span class="tag">Annual Fest</span></h3>
                       </div>
-                      <img src="images/image_5.jpg" class="img-fluid" alt="">
+                      <img src="images/SAFALYA'22 .jpg" class="img-fluid" alt="">
                       <!-- <div class="text p-4 d-flex align-items-center">
                         <div class="user d-flex align-items-center">
                           <div class="user-img mr-3" style="background-image: url(images/SamarthBlack.png);"></div>
-                          <!-- <h3>John Bruce <br><span class="position">Designer</span></h3> -->
+                          <h3>John Bruce <br><span class="position">Designer</span></h3> -->
                         <!-- </div> -->
                       <!-- </div> -->
                     </a>
                   </div>
 
                   <div class="col-md-4">
-                    <a style="cursor: pointer;" class="featured-img">
+                    <a style="cursor: auto;" class="featured-img">
                       <div class="text-1 p-4 d-flex align-items-center">
-                        <h3>Enthusia<br><span class="tag"></span></h3>
+                        <h3>Clash of Creativity<br><span class="tag"></span></h3>
                       </div>
-                      <img src="images/enthusia.jpg" class="img-fluid" alt="">
+                      <img src="images/coc_gif.gif" class="img-fluid" alt="">
                       <!-- <div class="text p-4 d-flex align-items-center"> -->
                         <!-- <div class="user d-flex align-items-center"> -->
                           <!-- <div class="user-img mr-3" style="background-image: url(images/SamarthBlack.png);"></div> -->
@@ -296,7 +217,7 @@
               <div class="col-md-12">
                 <div class="row no-gutters d-flex align-items-start">
                   <div class="col-md-8">
-                    <a style="cursor: pointer;" class="featured-img">
+                    <a style="cursor: auto;" class="featured-img">
                       <div class="text-1 p-4 d-flex align-items-center">
                         <h3>Creative Writing<br><span class="tag"></span></h3>
                       </div>
@@ -310,11 +231,11 @@
                     </a>
                   </div>
                   <div class="col-md-4">
-                    <a style="cursor: pointer;" class="featured-img">
+                    <a style="cursor: auto;" class="featured-img">
                       <div class="text-1 p-4 d-flex align-items-center">
                         <h3>Titans of Situaton<br><span class="tag"></span></h3>
                       </div>
-                      <img src="images/titans.jpg" class="img-fluid" alt="">
+                      <img src="images/TOTS.png" class="img-fluid" alt="">
                       <div class="text p-4 d-flex align-items-center">
                         <div class="user d-flex align-items-center">
                           <div class="user-img mr-3" style="background-image: url(images/SamarthBlack.png);"></div>
@@ -329,7 +250,7 @@
           </div>
 
           <div class="col-md-3">
-            <a style="cursor: pointer;" class="featured-img">
+            <a style="cursor: auto;" class="featured-img">
               <div class="text-1 p-4 d-flex align-items-center">
                 <h3>Safalya<br><span class="tag">Annual Fest</span></h3>
               </div>
@@ -427,7 +348,7 @@
       </div>
     </section>
 
-    <section id="work" class="ftco-section">
+    <section id="work" class="ftco-section works">
       <div class="container">
         <div class="row no-gutters justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -438,7 +359,7 @@
         </div>
         <div class="row">
           <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="https://www.instagram.com/p/CN0Va8kgzbP/?igshid=YmMyMTA2M2Y=" target="_blank" class="image" style="background-image: url('images/Naxalism.JPG'); " data-scrollax=" properties: { translateY: '-20%'}">
+            <a href="https://www.instagram.com/p/CN0Va8kgzbP/?igshid=YmMyMTA2M2Y=" target="_blank" class="image" style="background-image: url('images/Naxalism.JPG'); height: 500px;" data-scrollax=" properties: { translateY: '-20%'}">
             </a>
             <div class="text">
               <h4 class="subheading">Research on Naxalism</h4>
@@ -450,18 +371,17 @@
             </div>
           </div>
           <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="https://www.instagram.com/tv/CP_SzuYgL2t/?igshid=YmMyMTA2M2Y=" target="_blank" class="image image-2 order-2" style="background-image: url('images/gaza.png');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <a href="https://www.instagram.com/tv/CP_SzuYgL2t/?igshid=YmMyMTA2M2Y=" target="_blank" class="image image-2 order-2" style="background-image: url('images/gaza.jpg');height: 500px;" data-scrollax=" properties: { translateY: '-20%'}"></a>
             <div class="text order-1">
               <h4 class="subheading">Israel Gaza Conflict</h4>
               <h2 class="heading"><a href="https://www.instagram.com/tv/CP_SzuYgL2t/?igshid=YmMyMTA2M2Y=" target="_blank">"There was never a good war,or a bad peace" <br>  -Benjamin Franklin</a></h2>
               <p>Israeli-Palestinian conflict is one of the world's most enduring hostilities. After more than 50 yrs of war, terrorism,peace-negotiations and human suffering recently, again the news of conflict and violence among Israel-Palestine left the world shock.
-                Though it's not easy to cover every dimension within a limited time and space.
-                We h've tried our best to create comprehensive understanding of the issue.</p>
+                </p>
               <p><a href="https://www.instagram.com/tv/CP_SzuYgL2t/?igshid=YmMyMTA2M2Y=" target="_blank" class="btn btn-primary px-4">View Work</a></p>
             </div>
           </div>
           <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            <a href="https://www.instagram.com/p/CSTzJYMlozn/?igshid=YmMyMTA2M2Y=" target="_blank" class="image" style="background-image: url('images/oil.png'); " data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <a href="https://www.instagram.com/p/CSTzJYMlozn/?igshid=YmMyMTA2M2Y=" target="_blank" class="image" style="background-image: url('images/oil.jpg');height: 500px; " data-scrollax=" properties: { translateY: '-20%'}"></a>
             <div class="text">
               <h4 class="subheading">Rising Oil prices</h4>
               <h2 class="heading"><a href="https://www.instagram.com/p/CSTzJYMlozn/?igshid=YmMyMTA2M2Y=" target="_blank">Petrol Price Surge in India</a></h2>
@@ -533,7 +453,55 @@
         <div class="row ftco-animate">
           <div class="col-md-12">
             <div class="carousel-testimony owl-carousel ftco-owl">
-                <!-- start -->
+            <!-- start -->
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/guest_sayan.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <span class="mb-5">Guest of Honor Safalya'22</span>
+                    <p class="name">Sayan Chakraborty</p>
+                    <p style="color: darkslategrey;" class="position">Founder of Where's The Food & winner of TIMES ICON OF THE YEAR!</p>
+                  </div>
+                </div>
+              </div>
+            <!-- End -->
+            <!-- start -->
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/guest_Sameer.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <span class="mb-5">Guest of Honor Safalya'22</span>
+                    <p class="name">Sameer Nairantarya</p>
+                    <p style="color: darkslategrey;" class="position">Jt.CDA in Area Account office, Ministry of Defence, Kolkata.</p>
+                  </div>
+                </div>
+              </div>
+            <!-- End -->
+            <!-- start -->
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/guest_purnava2k22.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <span class="mb-5">Guest of Honor Safalya'22</span>
+                    <p class="name">Purnava Ganguly</p>
+                    <p style="color: darkslategrey;" class="position">Assistant registrar of companies in serious fraud investigation office indian corporate law service</p>
+                  </div>
+                </div>
+              </div>
+            <!-- End -->
+            <!-- start -->
               <div class="item text-center">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="user-img mb-4" style="background-image: url(images/guest_chief_dGp.jpeg)">
@@ -548,7 +516,7 @@
                   </div>
                 </div>
               </div>
-              <!-- End -->
+            <!-- End -->
               <div class="item text-center">
                 <div class="testimony-wrap p-4 pb-5">
                   <div class="user-img mb-4" style="background-image: url(images/guest_deepakthakur.jpeg)">
@@ -589,7 +557,7 @@
                     <!-- <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
                     <span class="mb-5">Guest of Honor Safalya'21</span>
                     <p class="name">Hemant Kumar</p>
-                    <p style="color: darkslategrey;" class="position">Ex software Engineer</p>
+                    <p style="color: darkslategrey;" class="position">Appraiser in Customs</p>
                   </div>
                 </div>
               </div>
@@ -635,7 +603,7 @@
                     <!-- <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
                     <span class="mb-5">Guest of Honor Safalya'21</span>
                     <p class="name">Purnava Ganguly</p>
-                    <p  style="color: darkslategrey;" class="position">Civil engineer from JU who cleared UPSC civil service exam with an AIR of 498</p>
+                    <p  style="color: darkslategrey;" class="position">UPSC civil service exam AIR of 498 , Assistant registrar of companies in serious fraud investigation office indian corporate law service</p>
                   </div>
                 </div>
               </div>  
@@ -805,7 +773,7 @@
             <div class="ftco-footer-widget mb-4 ml-5">
               <h2 class="ftco-heading-2">Quick Links</h2>
               <ul class="list-unstyled">
-                <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                <!-- <li><a href="index.html" class="py-2 d-block">Home</a></li> -->
                 <li><a href="#about" class="py-2 d-block">About</a></li>
                 <li><a href="events.html" class="py-2 d-block">Events</a></li>
                 <!-- <li><a href="#" class="py-2 d-block">Portfolio</a></li> -->
@@ -818,10 +786,10 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Contact Information</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">EM-4/1, Sector-V, Salt Lake, Kolkata : 700 091</a></li>
+                <li><a href="https://goo.gl/maps/AduQHePLrvN7jS7M8" class="py-2 d-block">EM-4/1, Sector-V, Salt Lake, Kolkata : 700 091</a></li>
                 <!-- <li><a href="#" class="py-2 d-block">+ 1235 2355 98</a></li> -->
                 <!-- <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li> -->
-                <li><a href="#" class="py-2 d-block">samarth.tmsl.css@email.com</a></li>
+                <li><a href="mailto:samarth.tmsl.css@gmail.com?subject=Your Subject&body=Your Message" class="py-2 d-block" style="text-decoration: none;">samarth.tmsl.css@email.com</a></li>
               </ul>
             </div>
           </div>
@@ -830,7 +798,7 @@
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                 <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
                 <li class="ftco-animate"><a href="https://www.facebook.com/SamarthTMSL/"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://instagram.com/samarth_tmsl_official?igshid=YmMyMTA2M2Y="><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://instagram.com/samarth_tmsl_official?igshid=YmMyMTA2M2Y=" ><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -849,7 +817,7 @@
   
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen">
+  <!-- <div id="ftco-loader" class="show fullscreen"> -->
     <!-- <svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
@@ -873,9 +841,34 @@
         <animate attributeName="fill" values="#e7e5e8;#1c4595" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animate>
       </circle>
       </svg> -->
-  </div>
-  <!-- New Loader JS -->
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+      <!-- <svg class="circular" width="100%" height="100%">
+        <image xlink:href="images/final.gif" width="100%" height="100%" />
+      </svg>
+  </div> -->
+
+  <!--<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function()
+    {
+      var scroll = $(window).scrollTop(),
+      dh = $(document).height(),
+      wh = $(window).height();
+      scrollPercent = (scroll / (dh-wh))*100;
+      $('#progressbar').css('height',scrollPercent + '%');
+    })
+  </script>-->
+
+  <!-- script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight-window.innerHeight;
+    window.onscroll = function()
+    {
+      let progressHeight = (window.pageYOffset / totalHeight)*100;
+      progress.style.height = progressHeight+"%"
+    }
+
+  </script-->
+  <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
     <script src="https://codepen.io/_fbrz/pen/KKEJOv/9a3e4ee2ef6dfd479ad33a2c85146fc1.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script id="rendered-js">
@@ -887,7 +880,6 @@
       });
       //# sourceURL=pen.js
     </script>
-    <!--New Loader JS-->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -904,9 +896,19 @@
   <script src="js/particles.min.js"></script>
   <script src="js/particle.js"></script>
   <script src="js/scrollax.min.js"></script>
+  <script src="js/3-scroll-top.js"></script>
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
   <!-- <script src="js/google-map.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
   <script src="js/main.js"></script>
-    
+  <script src="js/pre.js"></script>
+  <script>
+    // var loader=document.getElementById("preloader");
+    // function load(){
+    //   loader.style.display="none";
+    // }
+    // setTimeout(load,5000);
+    //$('#preloader').delay(5000).fadeOut("slow");
+  </script>  
   </body>
 </html>
