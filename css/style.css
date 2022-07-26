@@ -34,46 +34,6 @@
   --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
-  /* Loader */
-  .loader {
-    background-image: linear-gradient(-150deg, #efac78, cyan);
-    position:fixed;
-    /* display: block; */
-    z-index:101 !important;
-    top:50%;
-    left:50%;
-    width:60px;
-    height:60px;
-    margin:-30px -30px;
-    transform:rotate(45deg);
-    animation:rot-ld 2s ease-in-out infinite;
-  }
-  main .loader{
-    position: fixed;
-    z-index: 101 !important;
-    display: block;
-  }
-  .loader div {
-    position:fixed;
-    z-index:101 !important;
-    top:0px;
-    left:0px;
-    border:4px solid #333;
-    width:100%;
-    height:100%;
-  }
-  .loader div:nth-child(1) {
-    animation:div-1 2s ease-in-out infinite;
-  }
-  .loader div:nth-child(2) {
-    animation:div-2 2s ease-in-out infinite;
-  }
-  .loader div:nth-child(3) {
-    animation:div-3 2s ease-in-out infinite;
-  }
-  .loader div:nth-child(4) {
-    animation:div-4 2s ease-in-out infinite;
-  }
   @keyframes div-1 {
     0%,100% {
       transform:translateY(0px);
@@ -131,7 +91,6 @@
       visibility: hidden;
     }
   }
-/* Loader */
 #backtop {
   /* (A) BOTTOM RIGHT CORNER */
   position: fixed;
@@ -9255,94 +9214,3 @@ textarea.form-control {
   .categories li.active a, .sidelink li.active a {
     color: #404044;
     font-style: italic; }
-
-#ftco-loader {
-  position: fixed;
-  width: 96px;
-  height: 96px;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
-  border-radius: 16px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
-  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
-  transition: opacity .2s ease-out, visibility 0s linear .2s;
-  z-index: 1000; }
-
-#ftco-loader.fullscreen {
-  padding: 0;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  background-color: #fff;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
-#ftco-loader.show {
-  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  transition: opacity .4s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1; }
-
-#ftco-loader .circular {
-  /* -webkit-animation: loader-rotate 2s linear infinite; */
-  /* animation: loader-rotate 2s linear infinite; */
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  display: block;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg); }
-
-#ftco-loader .path {
-  stroke-dasharray: 1, 200;
-  stroke-dashoffset: 0;
-  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
-  animation: loader-dash 1.5s ease-in-out infinite;
-  stroke-linecap: round; }
-
-@-webkit-keyframes loader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes loader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@-webkit-keyframes loader-dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0; }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px; }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
-
-@keyframes loader-dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0; }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px; }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
