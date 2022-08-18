@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Samarth - Empowering the Youth</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="shortcut icon" href="./images/SamarthWhite.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--New loader Css-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+      type="text/javascript"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+
+    <style>
+      /* Demo Styles */
+      #content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      /* The Loader */
+      #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        overflow: hidden;
+      }
+      .no-js #loader-wrapper {
+        display: none;
+      }
+
+      #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #16a085;
+        -webkit-animation: spin 1.7s linear infinite;
+        animation: spin 1.7s linear infinite;
+        z-index: 11;
+      }
+      #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+        -webkit-animation: spin-reverse 0.6s linear infinite;
+        animation: spin-reverse 0.6s linear infinite;
+      }
+      #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes spin-reverse {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(-360deg);
+        }
+      }
+      @keyframes spin-reverse {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+      #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #222;
+        z-index: 10;
+      }
+
+      #loader-wrapper .loader-section.section-left {
+        left: 0;
+      }
+
+      #loader-wrapper .loader-section.section-right {
+        right: 0;
+      }
+
+      /* Loaded styles */
+      .loaded #loader-wrapper .loader-section.section-left {
+        transform: translateX(-100%);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      .loaded #loader-wrapper .loader-section.section-right {
+        transform: translateX(100%);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      .loaded #loader {
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      .loaded #loader-wrapper {
+        visibility: hidden;
+        transform: translateY(-100%);
+        transition: all 0.3s 1s ease-out;
+      }
+    </style>
+
+    <script>
+      window.console = window.console || function (t) {};
+    </script>
+
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+    <!--New loader Css-->
+  </head>
+  <body id="resource">
+    <!--New loader Css-->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <!--New loader Css-->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+      <div class="samarth_logo"><img style="width: 50px;width: 100%;height: 50px;border-radius: 50%;padding: right 5px;padding-top: 2px;cursor: pointer;" src="images/SamarthBlack.png"></div>
+      <div class="navbar-brand" style="cursor: pointer;">Samarth</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-item active"><a href="resource.html" class="nav-link">Resources</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item cta"><a href="contact.html" class="nav-link"><span>Get in touch</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->                            
+    
+    <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span><span>Resources</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Resources</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+    <section style="padding: 1em 0" class="ftco-section bg-light">
+      <div class="container-fluid my-3" id="resourceContainer">
+        <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 m-3 mx-4">
+          <h4 id="categoryText">Categories</h4>
+          <!--hr class="catHr" /-->
+          <ul id="categoryList" class="nav nav-pills flex-column mb-auto">
+            <li>
+              <button class="link-dark contribution-btn" id="contributeBtn">Contribution Button</button>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Programming</button>
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="programming">
+                  C++
+                </button>
+                <button class="btn select-category-btn shadow-none" value="programming">
+                  Java
+                </button>
+                <button class="btn select-category-btn shadow-none" value="programming">
+                  Python
+                </button>
+                <button class="btn select-category-btn shadow-none" value="programming">
+                  Javascript
+                </button>
+                <button class="btn select-category-btn" value="programming">
+                  PHP
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Web Development</button>
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="web">
+                  Frontend
+                </button>
+                <button class="btn select-category-btn shadow-none" value="web">
+                  Backend
+                </button>
+                <button class="btn select-category-btn shadow-none" value="web">
+                  MEAN
+                </button>
+                <button class="btn select-category-btn shadow-none" value="web">
+                  MERN
+                </button>
+                <button class="btn select-category-btn shadow-none" value="web">
+                  MEVN
+                </button>
+                <button class="btn select-category-btn" value="web">
+                  Ruby on Rails
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style ">Mobile Development</button>
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="android">
+                  Android
+                </button>
+                <button class="btn select-category-btn shadow-none" value="android">
+                  Flutter
+                </button>
+                <button class="btn select-category-btn shadow-none" value="android">
+                  IOS
+                </button>
+                <button class="btn select-category-btn shadow-none" value="android">
+                  React Native
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Application Programming Interface</button>
+              <div class="select-option">
+                <button class="btn select-category-btn" value="api">
+                  API
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Designing</button>
+    
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="design">
+                  General
+                </button>
+                <button class="btn select-category-btn shadow-none" value="design">
+                  Illustrations
+                </button>
+                <button class="btn select-category-btn shadow-none" value="design">
+                  Motion
+                </button>
+                <button class="btn select-category-btn shadow-none" value="design">
+                  Photo
+                </button>
+                <button class="btn select-category-btn shadow-none" value="design">
+                  Sound
+                </button>
+                <button class="btn select-category-btn shadow-none" value="design">
+                  UI/UX
+                </button>
+                <button class="btn select-category-btn shadow-none" value="design">
+                  Video
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">
+                Artificial Intelligience
+              </button>
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="ai">AI</button>
+                <button class="btn select-category-btn shadow-none" value="ai">ML</button>
+                <button class="btn select-category-btn shadow-none" value="ai">
+                  Computer Vision
+                </button>
+                <button class="btn select-category-btn shadow-none" value="ai">
+                  Deep Learning
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Data Science</button>
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="data_science">
+                  Statistics
+                </button>
+                <button class="btn select-category-btn shadow-none" value="data_science">
+                  Big Data
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Git and GitHub</button>
+              <div class="select-option">
+                <button class="btn select-category-btn" value="git">
+                  Git and GitHub
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Data Structures & Algorithms</button>
+              <div class="select-option">
+                <button class="btn select-category-btn" value="data_structure_&_algorithm">
+                  Data structures & Algorithms
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Database Management</button>
+              <div class="select-option">
+                <button class="btn select-category-btn" value="database_management">
+                  Database Management
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Blockchain Development</button>
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="Blockchain">
+                  Blockchain
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Ethical Hacking</button>
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="ethical_hacking">
+                  Ethical Hacking
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Game Development</button>
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="Game_dev">
+                  Game Development
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">Robotics</button>
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="robotics">
+                  Robotics
+                </button>
+              </div>
+            </li>
+            <li class="category">
+              <button class="link-dark btn-style">CyberSecurity</button>
+              <div class="select-option">
+                <button class="btn select-category-btn shadow-none" value="CyberSecurity">
+                  CyberSecurity
+                </button>
+              </div>
+            </li>
+          </ul>
+          <hr class="catHr" />
+        </div>
+        <!-- Sidebar Ends -->
+        <div class="container mt-3" id="contributionGuideline">
+          <h2 id="contriHead">Contribution Guidelines</h2>
+    
+          <div class="contributionHead font my-2">
+            Follow the steps below to start contributing. We hope you have fun!
+          </div>
+          <li class="font">
+            Fork and clone the Repo by typing the following commands in the
+            terminal
+          </li>
+          <!-- To add code snippets in future put the code inside <div> with class as Code and give ID to the code as any number and give the button as ID number+b
+            Eg: (1,1b) , (2,2b) etc
+          -->
+    
+    
+          <div class="code">
+            <div class="mx-4 my-2 fc" id="1">
+              <div class="">$ git clone https://github.com/&ltyour-github-username&gt/QuickLearn.git</div>
+              <div class="">$ cd QuickLearn</div>
+            </div>
+            <button class="copy-btn" id="1b" onclick="copy(this.id)">Copy</button>
+          </div>
+    
+          <li class="font">
+            Now to add your resource to website, add an object with keys same as
+            listed in existing objects in the file.
+          </li>
+          <li class="font">Save and commit your code.</li>
+          <li class="font">
+            Push to your fork of the repository , navigate to original
+            repository and make a pull request.
+          </li>
+          <li class="font">Make changes to the code</li>
+          <li class="font">Stage your changes using:</li>
+    
+          <div class="code">
+            <div class="mx-4 my-2 fc" id="2">$ git add .</div>
+            <button class="copy-btn" onclick="copy(this.id)" id="2b">Copy</button>
+          </div>
+    
+          <li class="font">Commit your changes using:</li>
+    
+          <div class="code">
+            <div class="mx-4 my-2 fc" id="3">$ git commit -m "add any comment"</div>
+            <button class="copy-btn" onclick="copy(this.id)" id="3b">Copy</button>
+          </div>
+    
+          <li class="font">Push the changes to the forked repository using:</li>
+    
+          <div class="code">
+            <div class="mx-4 my-2 fc" id="4">$ git push</div>
+            <button class="copy-btn" onclick="copy(this.id)" id="4b">Copy</button>
+          </div>
+    
+          <li class="font">Navigate to the original repository and make a pull request</li>
+          </ol>
+        </div>
+        <div class="container mt-3" id="resourceBox">
+          <!--Beginner Resource Box-->
+          <h4 class="resource-heading">Beginner</h4>
+          <div class="row" id="beginnerResourceBox"></div>
+          <!--Intermediate Resource Box -->
+          <h4 class="resource-heading">Intermediate</h4>
+          <div class="row mt-2" id="intermediateResourceBox"></div>
+          <!--Advanced Resource Box -->
+          <h4 class="resource-heading">Advanced</h4>
+          <div class="row mt-2" id="advancedResourceBox"></div>
+          <h4 class="resource-heading"></h4>
+          <div class="row mt-2" id="projectsResourceBox"></div>
+        </div>
+      </div>
+      </section>
+    </div>
+    
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Samarth</h2>
+              <p>Empowering the Youth</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-5">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                <!-- <li><a href="events.html" class="py-2 d-block">Events</a></li> -->
+                <!-- <li><a href="#" class="py-2 d-block">Services</a></li> -->
+                <!-- <li><a href="#" class="py-2 d-block">Portfolio</a></li> -->
+                <!-- <li><a href="#" class="py-2 d-block">About</a></li> -->
+                <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Contact Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="https://goo.gl/maps/AduQHePLrvN7jS7M8" class="py-2 d-block">EM‐4/1, Sector‐V, Salt Lake, Kolkata : 700 091</a></li>
+                <!-- <li><a href="#" class="py-2 d-block">+91 9999999888</a></li> -->
+                <!-- <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li> -->
+                <li><a href="mailto:samarth.tmsl.css@gmail.com?subject=Your Subject&body=Your Message" class="py-2 d-block">samarth.tmsl.css@email.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
+                <li class="ftco-animate"><a href="https://www.facebook.com/SamarthTMSL/"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://instagram.com/samarth_tmsl_official?igshid=YmMyMTA2M2Y="><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by TechTeam@Samarth with <i class="icon-heart" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/getResource.js"></script>
+  <script src="js/particle.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- New Loader JS -->
+  <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+  <script src="https://codepen.io/_fbrz/pen/KKEJOv/9a3e4ee2ef6dfd479ad33a2c85146fc1.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d5f8b6c1a9.js" crossorigin="anonymous"></script>
+  <script id="rendered-js">
+    $(document).ready(function () {
+      // Fakes the loading setting a timeout
+      setTimeout(function () {
+        $("body").addClass("loaded");
+      }, 3500);
+    });
+    //# sourceURL=pen.js
+  </script>
+  <!--New Loader JS-->
+  </body>
+</html>
