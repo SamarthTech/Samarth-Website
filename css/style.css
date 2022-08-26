@@ -111,7 +111,10 @@
 .mybutton:hover {
   color: white;
 }
-
+#categoryList{
+  text-align:center;
+  margin: auto;
+}
 .mybutton span {
   position: absolute;
   display: block;
