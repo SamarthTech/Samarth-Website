@@ -222,7 +222,7 @@
     font-family: sans-serif;
     color: var(--primary-label);
     padding: 8px;
-    color: white;
+    /* color: white; */
     background: var(--primary-title);
   }
   .btn-style {
@@ -241,6 +241,7 @@
     width: 300px;
     border-radius: 15px;
     box-shadow: 1px 1px 30px var(--primmary-shadow);
+    align-items: center;
   }
   #categoryText {
     font-weight: 600;
