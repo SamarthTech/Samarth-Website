@@ -298,7 +298,19 @@
     color: var(--primary-title);
     border: 2px solid var(--primary-title);
   }
-  
+  /* media queries for resource page */
+  @media only screen and (max-width: 750px) {
+    #resourceContainer {
+      display: flex;
+      padding: 1rem;
+      flex-direction: column;}
+      /* #sidebar{
+        display: flex;
+        margin: auto;
+        justify-items: center;
+      } */
+  }
+  /*  */
   /* The Loader */
 #loader-wrapper {
   position: fixed;
