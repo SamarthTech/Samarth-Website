@@ -62,6 +62,7 @@ const projectsResourceBox = document.getElementById('projectsResourceBox');
 // Contribution Btn
 contributionBtn.addEventListener('click', (e) => {
 	resourceBox.style.display = 'none';
+	resourceBox1.style.display = 'none';
 	contributionGuidline.style.display = 'block';
 	contributionBtn.style.backgroundColor = '#6940d3';
 	contributionBtn.style.color = 'white';
@@ -74,11 +75,66 @@ contributionBtn.addEventListener('click', (e) => {
 		x.style.display = 'none';
 	}
 });
+
+
+// **********************JS for each section gate upsc etc etc*************************************************
+const CSE = document.getElementById('CSE');
+const resourceBox1= document.getElementById('resourceBox1');
+const resourceBox2= document.getElementById('resourceBox2');
+CSE.addEventListener('click', ()=> {
+  contributionGuidline.style.display = 'none';
+  // resourceBox.style.display = 'none';
+  // resourceBox.style.display = 'block';
+
+  //Method 1
+  resourceBox1.innerHTML=`
+    <div class="container mt-3" id="resourceBox1" style=" background: red;">
+    <!--Beginner Resource Box-->
+    <h4 class="resource-heading">Beginne from js</h4>
+    <div class="row" id="beginnerResourceBox"></div>
+    <!--Intermediate Resource Box -->
+    <h4 class="resource-heading">Intermediate</h4>
+    <div class="row mt-2" id="intermediateResourceBox"></div>
+    <!--Advanced Resource Box -->
+    <h4 class="resource-heading">Advanced</h4>
+    <div class="row mt-2" id="advancedResourceBox"></div>
+    <h4 class="resource-heading"></h4>
+    <div class="row mt-2" id="projectsResourceBox"></div>
+    </div>`;
+  
+    resourceBox1.style.display = 'block';
+
+    // Method 2
+    //else use this >> 
+    // resourceBox2.style.display = 'block';
+    // resourceBox1.style.display = 'none';
+  
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ******************************************************************************************
+
+
 // Select Category Btn
 for (let i = 0; i < selectCategoryBtn.length; i++) {
 	selectCategoryBtn[i].addEventListener('click', async (e) => {
 		contributionGuidline.style.display = 'none';
-		resourceBox.style.display = 'block';
+		// resourceBox.style.display = 'block';
 		/* getting domain */
 		beginnerResourceBox.innerHTML = '';
 		intermediateResourceBox.innerHTML = '';
