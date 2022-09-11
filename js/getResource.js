@@ -11,54 +11,54 @@ const intermediateResourceBox = document.getElementById(
 const advancedResourceBox = document.getElementById('advancedResourceBox');
 const projectsResourceBox = document.getElementById('projectsResourceBox');
 // const domains = ["web","web","web"];
-const programming = ['c++', 'java', 'python', 'javascript', 'php'];
-const programmingLength = programming.length;
-const domains = [
-  "c++",
-  "java",
-  "python",
-  "javascript",
-  "php",
-  "frontend",
-  "backend",
-  "mern",
-  "mean",
-  "mevn",
-  "ruby_on_rails",
-  "android",
-  "flutter",
-  "ios",
-  "react_native",
-  "general",
-  "illustrations",
-  "motion",
-  "photo",
-  "sound",
-  "ui-ux",
-  "video",
-  "ai",
-  "computer_vision",
-  "deep_learning",
-  "machine_learning",
-  "big_data",
-  "statistics",
-  "git",
-  "data_structure_&_algorithm",
-  "data_management",
-  "blockchain",
-  "ethical_hacking",
-  "Game_dev",
-  "robotics",
-  "CyberSecurity"
-];
-let bres = '';
-let bdata = '';
-let ires = '';
-let idata = '';
-let ares = '';
-let adata = '';
-let pres = '';
-let pdata = '';
+// const programming = ['c++', 'java', 'python', 'javascript', 'php'];
+// const programmingLength = programming.length;
+// const domains = [
+//   "c++",
+//   "java",
+//   "python",
+//   "javascript",
+//   "php",
+//   "frontend",
+//   "backend",
+//   "mern",
+//   "mean",
+//   "mevn",
+//   "ruby_on_rails",
+//   "android",
+//   "flutter",
+//   "ios",
+//   "react_native",
+//   "general",
+//   "illustrations",
+//   "motion",
+//   "photo",
+//   "sound",
+//   "ui-ux",
+//   "video",
+//   "ai",
+//   "computer_vision",
+//   "deep_learning",
+//   "machine_learning",
+//   "big_data",
+//   "statistics",
+//   "git",
+//   "data_structure_&_algorithm",
+//   "data_management",
+//   "blockchain",
+//   "ethical_hacking",
+//   "Game_dev",
+//   "robotics",
+//   "CyberSecurity"
+// ];
+// let bres = '';
+// let bdata = '';
+// let ires = '';
+// let idata = '';
+// let ares = '';
+// let adata = '';
+// let pres = '';
+// let pdata = '';
 // Contribution Btn
 contributionBtn.addEventListener('click', (e) => {
 	resourceBox.style.display = 'none';
@@ -84,95 +84,95 @@ for (let i = 0; i < selectCategoryBtn.length; i++) {
 		intermediateResourceBox.innerHTML = '';
 		advancedResourceBox.innerHTML = '';
 		projectsResourceBox.innerHTML = '';
-		const value = selectCategoryBtn[i].value;
-		console.log(value);
-		console.log(domains[i]);
-		if (
-			value == 'Blockchain' ||
-			value == 'ethical_hacking' ||
-			value == 'Game_dev' ||
-			value == 'robotics' ||
-			value == 'CyberSecurity' ||
-			value == 'data_structure_&_algorithm' ||
-			value == 'database_management' ||
-			value == 'api'
-		) {
-			console.log('hello');
-			/* beginner*/
-			bres = await fetch(`./data/domains/${value}/beginner.json`);
-			bdata = await bres.json();
-			/* intermediate */
-			ires = await fetch(`./data/domains/${value}/intermediate.json`);
-			idata = await ires.json();
-			/* advanced */
-			ares = await fetch(`./data/domains/${value}/advanced.json`);
-			adata = await ares.json();
-		} else if (value == 'web' && domains[i] == 'mern') {
-			/* beginner*/
-			bres = await fetch(
-				`./data/domains/${value}/${domains[i]}/beginner.json`,
-			);
-			bdata = await bres.json();
-			/* intermediate */
-			ires = await fetch(
-				`./data/domains/${value}/${domains[i]}/intermediate.json`,
-			);
-			idata = await ires.json();
-			/* advanced */
-			ares = await fetch(
-				`./data/domains/${value}/${domains[i]}/advanced.json`,
-			);
-			adata = await ares.json();
-			/*projects*/
-			pres = await fetch(
-				`./data/domains/${value}/${domains[i]}/projects.json`,
-			);
-			pdata = await pres.json();
-			console.log(pdata);
-		} else {
-			/* beginner*/
-			bres = await fetch(
-				`./data/domains/${value}/${domains[i]}/beginner.json`,
-			);
-			bdata = await bres.json();
-			/* intermediate */
-			ires = await fetch(
-				`./data/domains/${value}/${domains[i]}/intermediate.json`,
-			);
-			idata = await ires.json();
-			/* advanced */
-			ares = await fetch(
-				`./data/domains/${value}/${domains[i]}/advanced.json`,
-			);
-			adata = await ares.json();
-		}
+		// const value = selectCategoryBtn[i].value;
+		// console.log(value);
+		// console.log(domains[i]);
+		// if (
+		// 	value == 'Blockchain' ||
+		// 	value == 'ethical_hacking' ||
+		// 	value == 'Game_dev' ||
+		// 	value == 'robotics' ||
+		// 	value == 'CyberSecurity' ||
+		// 	value == 'data_structure_&_algorithm' ||
+		// 	value == 'database_management' ||
+		// 	value == 'api'
+		// ) {
+		// 	console.log('hello');
+		// 	/* beginner*/
+		// 	bres = await fetch(`./data/domains/${value}/beginner.json`);
+		// 	bdata = await bres.json();
+		// 	/* intermediate */
+		// 	ires = await fetch(`./data/domains/${value}/intermediate.json`);
+		// 	idata = await ires.json();
+		// 	/* advanced */
+		// 	ares = await fetch(`./data/domains/${value}/advanced.json`);
+		// 	adata = await ares.json();
+		// } else if (value == 'web' && domains[i] == 'mern') {
+		// 	/* beginner*/
+		// 	bres = await fetch(
+		// 		`./data/domains/${value}/${domains[i]}/beginner.json`,
+		// 	);
+		// 	bdata = await bres.json();
+		// 	/* intermediate */
+		// 	ires = await fetch(
+		// 		`./data/domains/${value}/${domains[i]}/intermediate.json`,
+		// 	);
+		// 	idata = await ires.json();
+		// 	/* advanced */
+		// 	ares = await fetch(
+		// 		`./data/domains/${value}/${domains[i]}/advanced.json`,
+		// 	);
+		// 	adata = await ares.json();
+		// 	/*projects*/
+		// 	pres = await fetch(
+		// 		`./data/domains/${value}/${domains[i]}/projects.json`,
+		// 	);
+		// 	pdata = await pres.json();
+		// 	console.log(pdata);
+		// } else {
+		// 	/* beginner*/
+		// 	bres = await fetch(
+		// 		`./data/domains/${value}/${domains[i]}/beginner.json`,
+		// 	);
+		// 	bdata = await bres.json();
+		// 	/* intermediate */
+		// 	ires = await fetch(
+		// 		`./data/domains/${value}/${domains[i]}/intermediate.json`,
+		// 	);
+		// 	idata = await ires.json();
+		// 	/* advanced */
+		// 	ares = await fetch(
+		// 		`./data/domains/${value}/${domains[i]}/advanced.json`,
+		// 	);
+		// 	adata = await ares.json();
+		// }
     
-    if (value == "Blockchain" || value == "ethical_hacking" || value == "Game_dev" ||value == "robotics" || value == "CyberSecurity" || value == "git" || value == "data_structure_&_algorithm" || value == "database_management" || value == "api") {
-      console.log("hello");
-      /* beginner*/
-      bres = await fetch(`./data/domains/${value}/beginner.json`);
-      bdata = await bres.json();
-      /* intermediate */
-      ires = await fetch(`./data/domains/${value}/intermediate.json`);
-      idata = await ires.json();
-      /* advanced */
-      ares = await fetch(`./data/domains/${value}/advanced.json`);
-      adata = await ares.json();
-    }
-    else {
-      /* beginner*/
-      console.log("here");
-      bres = await fetch(`./data/domains/${value}/${domains[i]}/beginner.json`);
-      bdata = await bres.json();
-      /* intermediate */
-      ires = await fetch(
-        `./data/domains/${value}/${domains[i]}/intermediate.json`
-      );
-      idata = await ires.json();
-      /* advanced */
-      ares = await fetch(`./data/domains/${value}/${domains[i]}/advanced.json`);
-      adata = await ares.json();
-    }
+    // if (value == "Blockchain" || value == "ethical_hacking" || value == "Game_dev" ||value == "robotics" || value == "CyberSecurity" || value == "git" || value == "data_structure_&_algorithm" || value == "database_management" || value == "api") {
+    //   console.log("hello");
+    //   /* beginner*/
+    //   bres = await fetch(`./data/domains/${value}/beginner.json`);
+    //   bdata = await bres.json();
+    //   /* intermediate */
+    //   ires = await fetch(`./data/domains/${value}/intermediate.json`);
+    //   idata = await ires.json();
+    //   /* advanced */
+    //   ares = await fetch(`./data/domains/${value}/advanced.json`);
+    //   adata = await ares.json();
+    // }
+    // else {
+    //   /* beginner*/
+    //   console.log("here");
+    //   bres = await fetch(`./data/domains/${value}/${domains[i]}/beginner.json`);
+    //   bdata = await bres.json();
+    //   /* intermediate */
+    //   ires = await fetch(
+    //     `./data/domains/${value}/${domains[i]}/intermediate.json`
+    //   );
+    //   idata = await ires.json();
+    //   /* advanced */
+    //   ares = await fetch(`./data/domains/${value}/${domains[i]}/advanced.json`);
+    //   adata = await ares.json();
+    // }
 
     /* beginner data */
     // later we can have loader
@@ -180,7 +180,6 @@ for (let i = 0; i < selectCategoryBtn.length; i++) {
       if (bdata != "") {
         for (let i = 0; i < bdata.length; i++) {
           if (bdata[i].type == "docs") {
-
             beginnerResourceBox.innerHTML += ` 
             <div class="col-6 col-md-4">
             <div class="card m-3" style="width: 100%">
