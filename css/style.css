@@ -656,7 +656,26 @@
   filter: blur(30px);
 }
 */
+/* *************************************************************************Our team**************************************************************** */
 
+#teachers .testimony-wrap{
+  background: rgba(255, 246, 246, 0.81);
+  padding-bottom: 2rem !important;
+  padding-top: 2rem !important;
+}
+#teachers .user-img{
+  width: 150px;
+  height: 150px;
+  margin: 10px auto
+}
+#teachers .name{
+  font-weight: 550;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(186, 122, 73);
+}
+/* *************************************************************************************************************************************************** */
 *,
 *::before,
 *::after {
