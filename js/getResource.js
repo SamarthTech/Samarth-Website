@@ -73,7 +73,7 @@ ECE.addEventListener('click',(e)=>{
     <!--Advanced Resource Box -->
     <h4 class="resource-heading">Advanced</h4>
     <div class="row mt-2" id="advancedResourceBox"></div>
-    <h4 class="resource-heading"></h4>
+    <h4 class="resource-heading">fhghgghgggghghghggh</h4>
     <div class="row mt-2" id="projectsResourceBox"></div>
     </div>`;
   
