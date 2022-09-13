@@ -262,8 +262,15 @@
   .resource-heading {
     font-size: 2.2rem;
     font-weight: 800;
-    font-family: monospace;
+    font-family: "Poppins" , sans-serif;
   }
+
+  .resource-subheading {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: "Poppins" , sans-serif;
+  }
+
   
   .category .select-option {
     display: none;
