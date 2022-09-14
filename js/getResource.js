@@ -100,11 +100,11 @@ ESE.addEventListener('click', (e)=> {
     </p>
     <h4 class="resource-heading">Pattern:</h4>
     <h6 class="resource-subheading">For UPSC IES Prelims Examination: </h6>
-    <img src = "images/TABLE1.png">
+    <img src = "images/TABLE1.png" class="responsive">
     <br>
     <br>
     <h6 class="resource-subheading">For UPSC IES Mains Examination: </h6><br>
-    <img src = "images/TABLE2.png"><br><br>
+    <img src = "images/TABLE2.png" class="responsive"><br><br>
     <h6 class="resource-subheading">For UPSC IES Personality Examination:</h6>
     <p>
     There is a minimum UPSC IES Cut Off that a candidate has to score to clear the Prelims and Mains exam. Once you clear the Mains you will be informed about the selection and will then be called for an IES Personality Test. The personality test also known as a personal interview will be of 200 marks.
