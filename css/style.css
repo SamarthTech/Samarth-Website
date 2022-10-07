@@ -12709,7 +12709,8 @@ textarea.form-control {
   border-radius: 20px;
   position: relative;
   height:350px !important;
-  width:250px !important;
+  width:350px !important;
+  padding:5px !important;
 }
 
 .testimony-wrap .user-img {
@@ -12739,13 +12740,13 @@ textarea.form-control {
 
 .testimony-wrap .name {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0;
   color: #efac78;
 }
 
 .testimony-wrap .position {
-  font-size: 13px;
+  font-size: 15px;
   color: #f4c8a6;
 }
 
