@@ -11336,7 +11336,7 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item.cta :hover {
-  background: linear-gradient(45deg, rgba(238, 118, 173, 1) 0%, rgba(239, 172, 120, 1) 100%);
+  background: linear-gradient(45deg,rgba(238, 118, 173, 1) 0%, rgba(239, 172, 120, 1) 100%);
   border: 1px solid transparent;
   transition: .4s ease-in-out;
 }
@@ -11397,6 +11397,7 @@ h5,
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   border-radius: 30px;
+  transition: 0s ease-in-out;
 }
 
 .ftco-navbar-light.scrolled .nav-item.cta>a span {
