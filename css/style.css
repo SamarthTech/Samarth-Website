@@ -12705,12 +12705,11 @@ textarea.form-control {
   -o-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
   background: #fff;
-  display: block;
+  display:block;
   border-radius: 20px;
-  position: relative;
   height:350px !important;
   width:350px !important;
-  padding:5px !important;
+  margin: auto;
 }
 
 .testimony-wrap .user-img {
