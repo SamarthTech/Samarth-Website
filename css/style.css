@@ -485,7 +485,7 @@
   transition: all 0.3s 1s ease-out;
 }
 
-/* Loader 
+/* Loader
   .loader {
     background-image: linear-gradient(-150deg, #efac78, cyan);
     position:fixed;
@@ -660,7 +660,7 @@
   top: 0;
   right: 0;
   width: 10px;
-  height: 100%;  
+  height: 100%;
   border-radius: 10px;
   background: linear-gradient(to top, #008aff, #00ffe7);
   animation: animate 10s linear infinite;
@@ -5429,7 +5429,7 @@ input[type="button"].btn-block {
 
 .navbar-toggler:hover,
 .navbar-toggler:focus {
-  text-decoration: none;
+  outline: none;
 }
 
 .navbar-toggler:not(:disabled):not(.disabled) {
@@ -11336,7 +11336,7 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item.cta :hover {
-  background: linear-gradient(45deg,rgba(238, 118, 173, 1) 0%, rgba(239, 172, 120, 1) 100%);
+  background: linear-gradient(45deg, rgba(238, 118, 173, 1) 0%, rgba(239, 172, 120, 1) 100%);
   border: 1px solid transparent;
   transition: .4s ease-in-out;
 }
