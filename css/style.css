@@ -12705,9 +12705,13 @@ textarea.form-control {
   -o-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
   background: #fff;
-  display: block;
   border-radius: 20px;
-  position: relative;
+  height:390px !important;
+  width:350px !important;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimony-wrap .user-img {
@@ -12737,13 +12741,13 @@ textarea.form-control {
 
 .testimony-wrap .name {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0;
   color: #efac78;
 }
 
 .testimony-wrap .position {
-  font-size: 13px;
+  font-size: 15px;
   color: #f4c8a6;
 }
 
