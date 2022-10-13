@@ -1406,6 +1406,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 10px;
 }
 
 .row {
@@ -11496,6 +11497,11 @@ h5,
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#448ef6', endColorstr='#af05a9', GradientType=10);
 }
 
+.hero-content {
+  margin-bottom: 54px;
+  z-index: 99999;
+}
+
 #particles-js {
   position: absolute;
   top: 0;
@@ -11743,7 +11749,7 @@ h5,
 }
 
 .ftco-section-featured {
-  margin-top: -250px;
+  margin-top: -230px;
   padding-bottom: 7em;
 }
 
