@@ -83,6 +83,7 @@
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-right: 2px;  
 }
 
 .copy-btn:hover {
@@ -10921,6 +10922,8 @@ button.bg-dark:focus {
 }
 
 .text-center {
+  position: relative;
+  bottom: 20px;
   text-align: center !important;
 }
 
@@ -11473,7 +11476,7 @@ h5,
 .hero-wrap {
   width: 100%;
   height: 100%;
-  clip-path: polygon(13% 0, 100% 0, 100% 99%, 87% 88%, 0 100%, 0 0);
+  clip-path: polygon(13% 0, 100% 0, 100% 99%, 85% 80%, 0 98%, 0 0);
   position: inherit;
   z-index: 0;
 }
@@ -11549,8 +11552,8 @@ h5,
 
 .slider-text .breadcrumbs {
   text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 18px;
+  letter-spacing: 2px;
   margin-bottom: 20px;
   z-index: 99;
 }
@@ -11565,7 +11568,8 @@ h5,
 }
 
 .slider-text .bread {
-  font-weight: 700 !important;
+  font-weight: 800 !important;
+   letter-spacing: 2px;
 }
 
 .slider-text .btn-primary {
@@ -12433,7 +12437,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: #ee76ad;
-  padding: 5em 0 2em 0;
+  padding: 2.5em 0 0 0;
 }
 
 .ftco-footer .ftco-footer-logo {
@@ -12444,7 +12448,7 @@ textarea.form-control {
 .ftco-footer .ftco-footer-widget h2 {
   font-weight: normal;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   font-size: 18px;
   font-weight: 400;
 }
