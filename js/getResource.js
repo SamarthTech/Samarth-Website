@@ -8,19 +8,19 @@ const contributionGuidline = document.getElementById('contributionGuideline');
 // const intermediateResourceBox = document.getElementById('intermediateResourceBox',);
 
 contributionBtn.addEventListener('click', (e) => {
-	resourceBox.style.display = 'none';
-	resourceBox1.style.display = 'none';
-	contributionGuidline.style.display = 'block';
-	contributionBtn.style.backgroundColor = '#6940d3';
-	contributionBtn.style.color = '#fff';
-	for (let j = 0; j < category.length; j++) {
-		selectBtn[j].style.backgroundColor = '#fff';
-		selectBtn[j].style.color = '#000';
-	}
-	for (let i = 0; i < category.length; i++) {
-		let x = category[i].querySelector('.select-option');
-		x.style.display = 'none';
-	}
+  resourceBox.style.display = 'none';
+  resourceBox1.style.display = 'none';
+  contributionGuidline.style.display = 'block';
+  contributionBtn.style.backgroundColor = '#6940d3';
+  contributionBtn.style.color = '#fff';
+  for (let j = 0; j < category.length; j++) {
+    selectBtn[j].style.backgroundColor = '#fff';
+    selectBtn[j].style.color = '#000';
+  }
+  for (let i = 0; i < category.length; i++) {
+    let x = category[i].querySelector('.select-option');
+    x.style.display = 'none';
+  }
 });
 
 
@@ -29,15 +29,29 @@ const CSE = document.getElementById('CSE');
 const ECE = document.getElementById('ECE');
 const ESE = document.getElementById('ESE');
 const UPSC = document.getElementById('UPSC');
-const resourceBox1= document.getElementById('resourceBox1');
-const resourceBox2= document.getElementById('resourceBox2');
-CSE.addEventListener('click', (e)=> {
+const SSC = document.getElementById('SSC');
+const AFCAT = document.getElementById('AFCAT');
+const GATE = document.getElementById('GATE');
+const EE = document.getElementById('EE');
+const ME = document.getElementById('ME');
+const CE = document.getElementById('CE');
+const ARCH = document.getElementById('ARCH');
+const CAT = document.getElementById('CAT');
+const ESEME = document.getElementById('ESEME');
+const ESEEE = document.getElementById('ESEEE');
+const ESEECE = document.getElementById('ESEECE');
+const ESECE = document.getElementById('ESECE');
+const resourceBox1 = document.getElementById('resourceBox1');
+const resourceBox2 = document.getElementById('resourceBox2');
+
+
+CSE.addEventListener('click', (e) => {
   contributionGuidline.style.display = 'none';
   // resourceBox.style.display = 'none';
   // resourceBox.style.display = 'block';
 
   //Method 1
-  resourceBox1.innerHTML=`
+  resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style=" background: red;">
     <!--Beginner Resource Box-->
     <h4 class="resource-heading">CSE</h4>
@@ -51,20 +65,20 @@ CSE.addEventListener('click', (e)=> {
     <h4 class="resource-heading"></h4>
     <div class="row mt-2" id="projectsResourceBox"></div>
     </div>`;
-  
-    resourceBox1.style.display = 'block';
 
-    // Method 2
-    //else use this >> 
-    // resourceBox2.style.display = 'block';
-    // resourceBox1.style.display = 'none';
-  
+  resourceBox1.style.display = 'block';
+
+  // Method 2
+  //else use this >> 
+  // resourceBox2.style.display = 'block';
+  // resourceBox1.style.display = 'none';
+
 })
 
-ECE.addEventListener('click',(e)=>{
+ECE.addEventListener('click', (e) => {
   contributionGuidline.style.display = 'none';
 
-  resourceBox1.innerHTML=`
+  resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style=" background: green;">
     <!--Beginner Resource Box-->
     <h4 class="resource-heading">ECE</h4>
@@ -78,17 +92,37 @@ ECE.addEventListener('click',(e)=>{
     <h4 class="resource-heading">fhghgghgggghghghggh</h4>
     <div class="row mt-2" id="projectsResourceBox"></div>
     </div>`;
-  
-    resourceBox1.style.display = 'block';
+
+  resourceBox1.style.display = 'block';
+})
+SSC.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style=" background: green;">
+    <!--Beginner Resource Box-->
+    <h4 class="resource-heading">SSC</h4>
+    <div class="row" id="beginnerResourceBox"></div>
+    <!--Intermediate Resource Box -->
+    <h4 class="resource-heading">Intermediate</h4>
+    <div class="row mt-2" id="intermediateResourceBox"></div>
+    <!--Advanced Resource Box -->
+    <h4 class="resource-heading">Advanced</h4>
+    <div class="row mt-2" id="advancedResourceBox"></div>
+    <h4 class="resource-heading">fhghgghgggghghghggh</h4>
+    <div class="row mt-2" id="projectsResourceBox"></div>
+    </div>`;
+
+  resourceBox1.style.display = 'block';
 })
 
-ESE.addEventListener('click', (e)=> {
+ESE.addEventListener('click', (e) => {
   contributionGuidline.style.display = 'none';
   // resourceBox.style.display = 'none';
   // resourceBox.style.display = 'block';
 
   //Method 1
-  resourceBox1.innerHTML=`
+  resourceBox1.innerHTML = `
     <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
     <div class="container mt-3" id="resourceBox1">
     <!--Beginner Resource Box-->
@@ -118,23 +152,23 @@ ESE.addEventListener('click', (e)=> {
     <h4 class="resource-heading"></h4>
     <div class="row mt-2" id="projectsResourceBox"></div>
     </div>`;
-  
-    resourceBox1.style.display = 'block';
 
-    // Method 2
-    //else use this >> 
-    // resourceBox2.style.display = 'block';
-    // resourceBox1.style.display = 'none';
-  
+  resourceBox1.style.display = 'block';
+
+  // Method 2
+  //else use this >> 
+  // resourceBox2.style.display = 'block';
+  // resourceBox1.style.display = 'none';
+
 })
 
-UPSC.addEventListener('click', (e)=> {
+UPSC.addEventListener('click', (e) => {
   contributionGuidline.style.display = 'none';
   // resourceBox.style.display = 'none';
   // resourceBox.style.display = 'block';
 
   //Method 1
-  resourceBox1.innerHTML=`
+  resourceBox1.innerHTML = `
     <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
     <div class="container mt-3" id="resourceBox1">
     <!--Beginner Resource Box-->
@@ -192,12 +226,12 @@ UPSC.addEventListener('click', (e)=> {
     <h4 class="resource-heading"></h4>
     <div class="row mt-2" id="projectsResourceBox"></div>
     </div>`;
-  
-    resourceBox1.style.display = 'block';
 
-    // Method 2
-    //else use this >> 
-    // resourceBox2.style.display = 'block';
-    // resourceBox1.style.display = 'none';
-  
+  resourceBox1.style.display = 'block';
+
+  // Method 2
+  //else use this >> 
+  // resourceBox2.style.display = 'block';
+  // resourceBox1.style.display = 'none';
+
 })
