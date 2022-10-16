@@ -38,6 +38,11 @@
 }
 
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 #contributionBtn,
 #exploreBtn {
@@ -83,6 +88,7 @@
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-right: 2px;  
 }
 
 .copy-btn:hover {
@@ -485,7 +491,7 @@
   transition: all 0.3s 1s ease-out;
 }
 
-/* Loader 
+/* Loader
   .loader {
     background-image: linear-gradient(-150deg, #efac78, cyan);
     position:fixed;
@@ -660,7 +666,7 @@
   top: 0;
   right: 0;
   width: 10px;
-  height: 100%;  
+  height: 100%;
   border-radius: 10px;
   background: linear-gradient(to top, #008aff, #00ffe7);
   animation: animate 10s linear infinite;
@@ -1406,6 +1412,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 10px;
 }
 
 .row {
@@ -5429,7 +5436,7 @@ input[type="button"].btn-block {
 
 .navbar-toggler:hover,
 .navbar-toggler:focus {
-  text-decoration: none;
+  outline: none;
 }
 
 .navbar-toggler:not(:disabled):not(.disabled) {
@@ -10921,6 +10928,8 @@ button.bg-dark:focus {
 }
 
 .text-center {
+  position: relative;
+  bottom: 20px;
   text-align: center !important;
 }
 
@@ -11323,7 +11332,6 @@ h5,
 .ftco-navbar-light .navbar-nav>.nav-item.cta>a {
   color: var(--gray-dark);
   border: 1px solid var(--gray);
-  /* background: #ee76ad; */
   padding-top: .5rem;
   padding-bottom: .5rem;
   padding-left: 20px;
@@ -11335,8 +11343,28 @@ h5,
   border-radius: 30px;
 }
 
+.ftco-navbar-light .navbar-nav>.nav-item.dta>a {
+  color: var(--gray-dark);
+  border: 1px solid var(--gray);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 4px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, rgba(238, 118, 173, 1) 0%, rgba(239, 172, 120, 1) 100%);
+  border: 1px solid transparent;
+  color: #fff;
+
+
+}
+
+
 .ftco-navbar-light .navbar-nav>.nav-item.cta :hover {
-  background: linear-gradient(45deg,rgba(238, 118, 173, 1) 0%, rgba(239, 172, 120, 1) 100%);
+  background: linear-gradient(45deg, rgba(238, 118, 173, 1) 0%, rgba(239, 172, 120, 1) 100%);
   border: 1px solid transparent;
   transition: .4s ease-in-out;
 }
@@ -11473,7 +11501,7 @@ h5,
 .hero-wrap {
   width: 100%;
   height: 100%;
-  clip-path: polygon(13% 0, 100% 0, 100% 99%, 87% 88%, 0 100%, 0 0);
+  clip-path: polygon(13% 0, 100% 0, 100% 99%, 85% 80%, 0 98%, 0 0);
   position: inherit;
   z-index: 0;
 }
@@ -11494,6 +11522,11 @@ h5,
   background: -ms-linear-gradient(45deg, #00FFFF 0%, #efac78 100%);
   background: linear-gradient(45deg, #00FFFF 0%, #efac78 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#448ef6', endColorstr='#af05a9', GradientType=10);
+}
+
+.hero-content {
+  margin-bottom: 54px;
+  z-index: 99999;
 }
 
 #particles-js {
@@ -11549,8 +11582,8 @@ h5,
 
 .slider-text .breadcrumbs {
   text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 18px;
+  letter-spacing: 2px;
   margin-bottom: 20px;
   z-index: 99;
 }
@@ -11565,7 +11598,8 @@ h5,
 }
 
 .slider-text .bread {
-  font-weight: 700 !important;
+  font-weight: 800 !important;
+   letter-spacing: 2px;
 }
 
 .slider-text .btn-primary {
@@ -11743,7 +11777,7 @@ h5,
 }
 
 .ftco-section-featured {
-  margin-top: -250px;
+  margin-top: -230px;
   padding-bottom: 7em;
 }
 
@@ -12437,7 +12471,7 @@ footer h5{
 .ftco-footer {
   font-size: 16px;
   background: #ee76ad;
-  padding: 5em 0 2em 0;
+  padding: 2.5em 0 0 0;
 }
 
 .ftco-footer .ftco-footer-logo {
@@ -12448,7 +12482,7 @@ footer h5{
 .ftco-footer .ftco-footer-widget h2 {
   font-weight: normal;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -12709,9 +12743,13 @@ footer h5{
   -o-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
   background: #fff;
-  display: block;
   border-radius: 20px;
-  position: relative;
+  height:390px !important;
+  width:350px !important;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimony-wrap .user-img {
@@ -12741,13 +12779,13 @@ footer h5{
 
 .testimony-wrap .name {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0;
   color: #efac78;
 }
 
 .testimony-wrap .position {
-  font-size: 13px;
+  font-size: 15px;
   color: #f4c8a6;
 }
 
