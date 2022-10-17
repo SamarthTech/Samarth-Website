@@ -24,97 +24,10 @@ contributionBtn.addEventListener('click', (e) => {
 });
 
 
-// **********************JS for each section gate upsc etc etc*************************************************
-const CSE = document.getElementById('CSE');
-const ECE = document.getElementById('ECE');
+// ************************************************JS for each section*******************************************************************
+// *********************************************************Complete*********************************************************************
 const ESE = document.getElementById('ESE');
 const UPSC = document.getElementById('UPSC');
-const SSC = document.getElementById('SSC');
-const AFCAT = document.getElementById('AFCAT');
-const GATE = document.getElementById('GATE');
-const EE = document.getElementById('EE');
-const ME = document.getElementById('ME');
-const CE = document.getElementById('CE');
-const ARCH = document.getElementById('ARCH');
-const CAT = document.getElementById('CAT');
-const ESEME = document.getElementById('ESEME');
-const ESEEE = document.getElementById('ESEEE');
-const ESEECE = document.getElementById('ESEECE');
-const ESECE = document.getElementById('ESECE');
-const resourceBox1 = document.getElementById('resourceBox1');
-const resourceBox2 = document.getElementById('resourceBox2');
-
-
-CSE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  // resourceBox.style.display = 'none';
-  // resourceBox.style.display = 'block';
-
-  //Method 1
-  resourceBox1.innerHTML = `
-    <div class="container mt-3" id="resourceBox1" style=" background: red;">
-    <!--Beginner Resource Box-->
-    <h4 class="resource-heading">CSE</h4>
-    <div class="row" id="beginnerResourceBox"></div>
-    <!--Intermediate Resource Box -->
-    <h4 class="resource-heading">Intermediate</h4>
-    <div class="row mt-2" id="intermediateResourceBox"></div>
-    <!--Advanced Resource Box -->
-    <h4 class="resource-heading">Advanced</h4>
-    <div class="row mt-2" id="advancedResourceBox"></div>
-    <h4 class="resource-heading"></h4>
-    <div class="row mt-2" id="projectsResourceBox"></div>
-    </div>`;
-
-  resourceBox1.style.display = 'block';
-
-  // Method 2
-  //else use this >> 
-  // resourceBox2.style.display = 'block';
-  // resourceBox1.style.display = 'none';
-
-})
-
-ECE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-
-  resourceBox1.innerHTML = `
-    <div class="container mt-3" id="resourceBox1" style=" background: green;">
-    <!--Beginner Resource Box-->
-    <h4 class="resource-heading">ECE</h4>
-    <div class="row" id="beginnerResourceBox"></div>
-    <!--Intermediate Resource Box -->
-    <h4 class="resource-heading">Intermediate</h4>
-    <div class="row mt-2" id="intermediateResourceBox"></div>
-    <!--Advanced Resource Box -->
-    <h4 class="resource-heading">Advanced</h4>
-    <div class="row mt-2" id="advancedResourceBox"></div>
-    <h4 class="resource-heading">fhghgghgggghghghggh</h4>
-    <div class="row mt-2" id="projectsResourceBox"></div>
-    </div>`;
-
-  resourceBox1.style.display = 'block';
-})
-SSC.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-
-  resourceBox1.innerHTML = `
-    <div class="container mt-3" id="resourceBox1" style=" background: green;">
-    <!--Beginner Resource Box-->
-    <h4 class="resource-heading">SSC</h4>
-    <div class="row" id="beginnerResourceBox"></div>
-    <!--Intermediate Resource Box -->
-    <h4 class="resource-heading">Intermediate</h4>
-    <div class="row mt-2" id="intermediateResourceBox"></div>
-    <!--Advanced Resource Box -->
-    <h4 class="resource-heading">Advanced</h4>
-    <div class="row mt-2" id="advancedResourceBox"></div>
-    <h4 class="resource-heading">fhghgghgggghghghggh</h4>
-    <div class="row mt-2" id="projectsResourceBox"></div>
-    </div>`;
-
-  resourceBox1.style.display = 'block';
-})
 
 ESE.addEventListener('click', (e) => {
   contributionGuidline.style.display = 'none';
@@ -144,7 +57,7 @@ ESE.addEventListener('click', (e) => {
     <p>
     There is a minimum UPSC IES Cut Off that a candidate has to score to clear the Prelims and Mains exam. Once you clear the Mains you will be informed about the selection and will then be called for an IES Personality Test. The personality test also known as a personal interview will be of 200 marks.
     </p>
-
+    
     <!--Intermediate Resource Box -->
     <div class="row mt-2" id="intermediateResourceBox"></div>
     <!--Advanced Resource Box -->
@@ -169,49 +82,49 @@ UPSC.addEventListener('click', (e) => {
 
   //Method 1
   resourceBox1.innerHTML = `
-    <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
-    <div class="container mt-3" id="resourceBox1">
-    <!--Beginner Resource Box-->
-    <h4 class="resource-heading">What is UPSC-CSE?</h4>
-    <p>The Civil Services Examination (CSE) is a national competitive examination in India conducted by the Union Public Service Commission for recruitment to higher Civil Services of the Government of India, including the Indian Administrative Service, Indian Foreign Service, and Indian Police Service.
-    </p>
-    <div class="row" id="beginnerResourceBox"></div>
-    <h4 class="resource-heading">Basic Qualifications:</h4>
-    <h6 class="resource-subheading">Educational Qualification:</h6>
-    <p>Candidate must hold a Graduate Degree from a recognised University. 
-    </p>
-    <h6 class="resource-subheading">Age Limit:</h6>
-    <p>Candidate must be a minimum of 21 years of age and must not be more than 32 years of age.
-    </p>
-    <h6 class="resource-subheading">The number of attempts: 
-    </h6>
-    <p>
-    <b>General Category:</b> 6 attempts till 32 years of age. <br>
-    <b>OBC:</b> 9 attempts till 35 years of age.<br>
-    <b>SC/ST:</b> Unlimited attempts till 37 years of age.<br>
-    </p>
-    <h4 class="resource-heading">Exam Pattern:</h4>
-    <p>The UPSC Prelims comprises two objective type papers (General Studies I and General Studies II or CSAT) for a total of 400 marks. Both papers are usually held on the same day in two sessions via offline mode (pen-paper).
-    It is objective type in nature and consists of two papers carrying 200 marks each.
-    </p>
-    <p>UPSC CSE Preliminary Exam is objective type in nature, whereas, the UPSC CSE Mains exam comprises of 9 Subjective papers and a Personality Test (Interview).
-    </p>
-    <p>While the score in GS Paper-I determines whether or not you qualify for the cut off of prelims, CSAT is qualifying in nature. You only need to score more than 33% or 66 marks for the CSAT paper. Altogether, the preliminary exam is qualifying in nature. Thus, the score does not add up to the final merit.
-    </p>
-    <p>
-    Mostly, the marks awarded for the interview ranges from 40% to 80%. The candidates who score a little less in the main examination written part can make it to the final list if he/she scores well in the interview.
-    </p>
+  <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
+  <div class="container mt-3" id="resourceBox1">
+  <!--Beginner Resource Box-->
+  <h4 class="resource-heading">What is UPSC-CSE?</h4>
+  <p>The Civil Services Examination (CSE) is a national competitive examination in India conducted by the Union Public Service Commission for recruitment to higher Civil Services of the Government of India, including the Indian Administrative Service, Indian Foreign Service, and Indian Police Service.
+  </p>
+  <div class="row" id="beginnerResourceBox"></div>
+  <h4 class="resource-heading">Basic Qualifications:</h4>
+  <h6 class="resource-subheading">Educational Qualification:</h6>
+  <p>Candidate must hold a Graduate Degree from a recognised University. 
+  </p>
+  <h6 class="resource-subheading">Age Limit:</h6>
+  <p>Candidate must be a minimum of 21 years of age and must not be more than 32 years of age.
+  </p>
+  <h6 class="resource-subheading">The number of attempts: 
+  </h6>
+  <p>
+  <b>General Category:</b> 6 attempts till 32 years of age. <br>
+  <b>OBC:</b> 9 attempts till 35 years of age.<br>
+  <b>SC/ST:</b> Unlimited attempts till 37 years of age.<br>
+  </p>
+  <h4 class="resource-heading">Exam Pattern:</h4>
+  <p>The UPSC Prelims comprises two objective type papers (General Studies I and General Studies II or CSAT) for a total of 400 marks. Both papers are usually held on the same day in two sessions via offline mode (pen-paper).
+  It is objective type in nature and consists of two papers carrying 200 marks each.
+  </p>
+  <p>UPSC CSE Preliminary Exam is objective type in nature, whereas, the UPSC CSE Mains exam comprises of 9 Subjective papers and a Personality Test (Interview).
+  </p>
+  <p>While the score in GS Paper-I determines whether or not you qualify for the cut off of prelims, CSAT is qualifying in nature. You only need to score more than 33% or 66 marks for the CSAT paper. Altogether, the preliminary exam is qualifying in nature. Thus, the score does not add up to the final merit.
+  </p>
+  <p>
+  Mostly, the marks awarded for the interview ranges from 40% to 80%. The candidates who score a little less in the main examination written part can make it to the final list if he/she scores well in the interview.
+  </p>
     <h4 class="resource-heading">Phases:</h4>
     <p>Broadly, UPSC conducts the Civil Service Examination in three phases namely:</p>
-
+    
     <h6 class="resource-subheading">Preliminary Examination</h6>
     
     <h6 class="resource-subheading">Main Examination</h6>
     
     <h6 class="resource-subheading">Personality Test (Interview)</h6>
-
+    
     <p>Candidates who qualify for all the rounds are recommended for joining the civil services in India. Each round is an elimination round, so you need to qualify each one in order to appear for the next one.</p>
-
+    
     <h4 class="resource-heading">Marks Pattern:</h4>
     <p>
     A candidate's rank in UPSC Civil Service Exam depends only on the mark scored in Main and Interview. The main exam has 1750 marks while interview has 275 marks. The written examination (main) will consist of the following nine papers, but only 7 papers will be counted for final merit ranking.
@@ -235,3 +148,149 @@ UPSC.addEventListener('click', (e) => {
   // resourceBox1.style.display = 'none';
 
 })
+
+// ************************************************************************************
+// ********************************************************Incomplete Section********************************************************
+const CSE = document.getElementById('CSE');
+const ECE = document.getElementById('ECE');
+const SSC = document.getElementById('SSC');
+const CDS = document.getElementById('CDS');
+const AFCAT = document.getElementById('AFCAT');
+const GATE = document.getElementById('GATE');
+const EE = document.getElementById('EE');
+const ME = document.getElementById('ME');
+const CE = document.getElementById('CE');
+const ARCH = document.getElementById('ARCH');
+const CAT = document.getElementById('CAT');
+const ESEME = document.getElementById('ESEME');
+const ESEEE = document.getElementById('ESEEE');
+const ESEECE = document.getElementById('ESEECE');
+const ESECE = document.getElementById('ESECE');
+const resourceBox1 = document.getElementById('resourceBox1');
+const resourceBox2 = document.getElementById('resourceBox2');
+
+
+
+SSC.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+CDS.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+AFCAT.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+ESEME.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+ESEEE.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+ESEECE.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+ESECE.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+GATE.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+CE.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+ME.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+EE.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+ARCH.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+CDS.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+
+
+CSE.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
+
+ECE.addEventListener('click', (e) => {
+  contributionGuidline.style.display = 'none';
+  resourceBox1.style.display = 'block';
+  resourceBox1.innerHTML = `
+    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
+      <h4 class="resource-heading">To be Updated Soon</h4>
+    </div>`;
+});
