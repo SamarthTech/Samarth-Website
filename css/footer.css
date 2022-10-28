@@ -1,0 +1,12 @@
+
+.footer-icons ul li{
+    transition: width 2s, height 4s;
+    color: aliceblue;
+
+}
+.footer-icons ul li a:hover{
+    padding: 6px 6px;
+    border-radius: 50px;
+    color: #E98074;
+    background-color: white;
+}
