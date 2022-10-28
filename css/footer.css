@@ -1,4 +1,6 @@
-
+.footer-icons ul{
+    margin-bottom: 0;
+}
 .footer-icons ul li{
     transition: width 2s, height 4s;
     color: aliceblue;
