@@ -116,7 +116,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #0056b3;
+    color: #003A78;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
