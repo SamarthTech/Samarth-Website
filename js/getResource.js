@@ -176,7 +176,7 @@ SSC.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 CDS.addEventListener('click', (e) => {
@@ -184,7 +184,7 @@ CDS.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 AFCAT.addEventListener('click', (e) => {
@@ -192,7 +192,7 @@ AFCAT.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 ESEME.addEventListener('click', (e) => {
@@ -200,7 +200,7 @@ ESEME.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 ESEEE.addEventListener('click', (e) => {
@@ -208,7 +208,7 @@ ESEEE.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 ESEECE.addEventListener('click', (e) => {
@@ -216,7 +216,7 @@ ESEECE.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 ESECE.addEventListener('click', (e) => {
@@ -224,7 +224,7 @@ ESECE.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 GATE.addEventListener('click', (e) => {
@@ -232,7 +232,7 @@ GATE.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 CE.addEventListener('click', (e) => {
@@ -240,7 +240,7 @@ CE.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 ME.addEventListener('click', (e) => {
@@ -248,7 +248,7 @@ ME.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 EE.addEventListener('click', (e) => {
@@ -256,7 +256,7 @@ EE.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 ARCH.addEventListener('click', (e) => {
@@ -264,7 +264,7 @@ ARCH.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 CDS.addEventListener('click', (e) => {
@@ -272,7 +272,7 @@ CDS.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 
@@ -282,7 +282,7 @@ CSE.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 
@@ -291,6 +291,6 @@ ECE.addEventListener('click', (e) => {
   resourceBox1.style.display = 'block';
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading">To be Updated Soon</h4>
+      <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
