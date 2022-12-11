@@ -265,6 +265,7 @@
   width: 300px;
   border-radius: 15px;
   box-shadow: 1px 1px 30px var(--primmary-shadow);
+  height: 100%;
   align-items: center;
 }
 
