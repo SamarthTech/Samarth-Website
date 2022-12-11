@@ -51,7 +51,7 @@
 
       <div class="row">
     <div class="col-md-12">
-      <form action="https://script.google.com/macros/s/AKfycbyRPhSPfu8HD9V1Z_TU75eQ0rKah2jwFSnZzuqfJOd5JM1xh97oMDO-0755RMyV36zAew/exec" method="post" name="myForm">
+      <form action="https://script.google.com/macros/s/AKfycbz5y74OpMM_kLC_onei5Prl9k-FQQyfLPCfN2a2eHMrPfaKKK58UePZMrGGdiR7guuptQ/exec" method="post" name="myForm">
         <h1>Event Registration</h1>
         
         <fieldset>
@@ -59,19 +59,19 @@
           <legend><span class="number">1</span> Your Basic Info</legend>
         
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="name" required>
         
           <label for="email">Email:</label>
-          <input type="email" id="mail" name="email">
+          <input type="email" id="mail" name="email" required>
        
           <label for="tel">Phone Number:</label>
-          <input type="number" id="tel" name="phone">
+          <input type="number" id="tel" name="phone" required>
 
           <label for="department">Department:</label>
-          <input type="department" id="department"       name="dept">
+          <input type="department" id="department" name="dept" required>
         
           <label for="roll">University Roll Number:</label>
-          <input type="roll" id="roll"       name="roll">
+          <input type="roll" id="roll" name="roll" required>
 
           <label>Year:</label>
           <input type="radio" id="year1" value="year1" name="year"><label for="year1" class="light">First Year</label><br>
@@ -109,11 +109,15 @@
           
          </fieldset>
        
-        <button type="submit">Register</button>
+        <button type="submit" onclick="myfn()">Register</button>
         
        </form>
         </div>
       </div>
-      
+      <script>
+        function myfn() {
+          alert("Response Recorded!");
+        }
+        </script>
     </body>
 </html>
