@@ -8,9 +8,6 @@ particlesJS("particles-js", {
         "value_area": 700
       }
     },
-    "color": {
-      "value": "#ffffff"
-    },
     "shape": {
       "type": "circle",
       "stroke": {
