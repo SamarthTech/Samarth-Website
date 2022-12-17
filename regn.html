@@ -98,6 +98,9 @@
 
           <label for="event">Event:</label>
           <select id="event" name="event">
+            <optgroup label="Campus representative">
+              <option value="cr">Campus Representative</option>
+            </optgroup>
             <optgroup label="Safalya">
               <option value="matrix">Matrix of Mock</option>
               <option value="war">War of Convictions</option>
@@ -122,7 +125,7 @@
 
         </fieldset>
 
-        <button type="submit" onclick="myfn()">Register</button>
+        <button type="submit" onclick="myfn();preventDefault()">Register</button>
 
       </form>
     </div>
