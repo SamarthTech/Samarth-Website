@@ -776,8 +776,11 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
-
+html:focus-within {
+  scroll-behavior: smooth;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -799,6 +802,7 @@ section {
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
