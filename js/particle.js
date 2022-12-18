@@ -8,6 +8,9 @@ particlesJS("particles-js", {
         "value_area": 700
       }
     },
+    "color": {
+      "value": "#ffffff"
+    },
     "shape": {
       "type": "circle",
       "stroke": {
@@ -22,7 +25,7 @@ particlesJS("particles-js", {
       "value": 0.8,
       "random": false,
       "anim": {
-        "enable": true,
+        "enable": false,
         "speed": 0.2,
         "opacity_min": 0.8,
         "sync": false
@@ -64,7 +67,7 @@ particlesJS("particles-js", {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "grab"
       },
       "onclick": {
