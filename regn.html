@@ -130,7 +130,12 @@
 
         </fieldset>
 
-        <button type="submit">Register</button>
+        <!-- <button type="submit">Register</button> -->
+        <button class="button" type="submit">
+          <span class="submit">Submit</span>
+          <span class="loading"><i class="fa fa-refresh"></i></span>
+          <span class="check"><i class="fa fa-check"></i></span>
+        </button>
 
       </form>
     </div>
@@ -146,6 +151,22 @@
 				.then(() => {  window.location.reload(); })
 				.catch(error => console.error('Error!', error.message))
 			})
+  </script>
+  <script>
+    const button = document.querySelector('.button');
+    const submit = document.querySelector('.submit');
+
+    function toggleClass() {
+      this.classList.toggle('active');
+    }
+
+    function addClass() {
+      this.classList.add('finished');
+    }
+    
+    button.addEventListener('click', toggleClass);
+    button.addEventListener('transitionend', toggleClass);
+    button.addEventListener('transitionend', addClass);
   </script>
 </body>
 
