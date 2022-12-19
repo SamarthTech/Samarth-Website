@@ -743,7 +743,7 @@ p {
     .bee-row-2 .bee-col-2 .bee-block-1 .bee-hamburger-controls {
         width: 36px;
         height: 36px;
-        background-color: #ffd438;
+        background-color: hwb(47 22% 0%);
         border-radius: 50%;
     }
 

@@ -56,16 +56,16 @@
     <div class="col-md-12">
       <form
         action=""
-        method="post" name="myForm">
+        method="post" name="crform" id="crform">
         <div class="samarth_logo">
           <img src="images/SamarthBlack.png" alt="logo" width="100">
           <div class="navbar-brand" style="cursor: pointer;">Samarth</div>
         </div>
-        <h1>Registration</h1>
+        <h1>Campus Representative Registration</h1>
 
         <fieldset>
 
-          <legend><span class="number">1</span> Your Basic Info</legend>
+          <legend><span class="number">1</span>Your Basic Info</legend>
 
           <label for="name">Name:</label>
           <input type="text" id="name" name="Name" required>
@@ -80,10 +80,22 @@
           <input type="number" id="tel" name="WhatsAppNo" required>
 
           <label for="department">Department:</label>
-          <input type="text" id="department" name="dept" required>
+          <input type="department" id="department" name="dept" required>
 
-          <label for="roll">Roll Number:</label>
-          <input type="number" id="roll" name="roll" required>
+          <label for="fblink">Facebook Profile:</label>
+          <input type="text" id="Facebook" name="Facebook" required>
+
+          <label for="iglink">Instagram Profile:</label>
+          <input type="text" id="Insta" name="Insta" required>
+
+          <label for="twlink">Twitter Profile:</label>
+          <input type="text" id="Twitter" name="Twitter">
+
+          <label for="lklink">LinkedIn Profile:</label>
+          <input type="text" id="Linkedin" name="Linkedin">
+
+          <label for="message">Why do you want to apply?</label>
+          <textarea name="message" id="message" cols="30" rows="10" style="border-radius: 1px;" placeholder="Write your Answer in between 150 to 200 characters" required></textarea>
 
           <label>Year:</label>
           <input type="radio" id="year1" value="year1" name="year"><label for="year1" class="light">First
@@ -99,34 +111,12 @@
 
           <legend><span class="number">2</span> Registration Details</legend>
 
-          <label for="event">Events:</label>
+          <label for="event">Role:</label>
           <select id="event" name="event">
-            <optgroup label="Clash of Creativity">
-              <option value="web1.o">Webathon 1.O</option>
-              <option value="poster design">Poster Design</option>
-              <option value="video edit">Video Editing</option>
-            </optgroup>
-            <optgroup label="Safalya">
-              <option value="matrix">Matrix of Mock</option>
-              <option value="war">War of Convictions</option>
-              <option value="treasure">Treasure Hunt</option>
-              <option value="know">Know Your Hold</option>
-              <option value="dream">Dream Dots</option>
-            </optgroup>
-            <optgroup label="Showcase Your Talent">
-              <option value="content">Content Writing</option>
-              <option value="logo">Logo Designing</option>
-              <option value="meme">Meme Making</option>
-            </optgroup>
-            <optgroup label="Flagship Event">
-              <option value="tos">Titans of Situation</option>
+            <optgroup label="Campus Representative">
+              <option value="campus rep.">Campus Representative</option>
             </optgroup>
           </select>
-          <!--
-          <label>Interests:</label>
-          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label> -->
 
         </fieldset>
 
@@ -136,13 +126,13 @@
     </div>
   </div>
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKtpCBllUUTfr-OhyIBN1vCz6g9MbLSoMBpXcJ8OITfmrZeDRRRAr5i1jvBYx6osAO9g/exec'
-			const form = document.forms['myForm']
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykTcdSt7ClJeJUWvYofMukjO6QMH6ag2x-48RpNfzdz2SWe3oEVy_A6LP0MqF3iYwW/exec'
+			const form = document.forms['crform']
 		  
 			form.addEventListener('submit', e => {
 			  e.preventDefault()
 			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => alert("Thank you!! Your Registration is Successfully." ))
+				.then(response => alert("Thank you!! Your form is submitted successfully." ))
 				.then(() => {  window.location.reload(); })
 				.catch(error => console.error('Error!', error.message))
 			})
