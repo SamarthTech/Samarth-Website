@@ -155,11 +155,30 @@
   <script>
     const button = document.querySelector('.button');
     const submit = document.querySelector('.submit');
-
+    
+    const name = document.getElementById("name");
+    const nameValue = name.value.trim();
+    const mail = document.getElementById("mail");
+    const mailValue = mail.value.trim();
+    const tel = document.getElementById("tel")
+    const telValue =tel.value.trim()
+    const roll = document.getElementById("roll")
+    const rollValue =roll.value.trim()
+    
+    const department = document.getElementById("department")
+    const departmentValue =department.value.trim()
     function toggleClass() {
-      this.classList.toggle('active');
-    }
+      if(nameValue == "" || mailValue==""|| telValue==""|| rollValue==""|| departmentValue=="")
+      {
+        //no changes
+       // this.classList.toggle('active');
+      }  
+      else if(nameValue != "")
+      {
 
+        this.classList.toggle('active'); 
+    }
+  }
     function addClass() {
       this.classList.add('finished');
     }
