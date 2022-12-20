@@ -115,6 +115,13 @@ label.light {
   form {
     max-width: 480px;
   }
+  .row{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
 }
 .samarth_logo {
   text-align: center !important;
@@ -137,10 +144,8 @@ label.light {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 12.5rem;
-  /* margin: 2px; */
-  padding: 1.5rem 13.65rem;
   background-color: #3498db;
+  margin-bottom: 20px;
   border: none;
   border-radius: 0.3125rem;
   box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
