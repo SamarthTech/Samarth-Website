@@ -130,6 +130,9 @@
 
         </fieldset>
 
+        <label for="img">Image:</label>
+          <input type="file" accept="image/*" id="img" name="img">
+
         <!-- <button type="submit">Register</button> -->
         <button class="button" type="submit">
           <span class="submit">Submit</span>
@@ -141,8 +144,34 @@
     </div>
   </div>
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKtpCBllUUTfr-OhyIBN1vCz6g9MbLSoMBpXcJ8OITfmrZeDRRRAr5i1jvBYx6osAO9g/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyhTdGwKprq42HjWr3mNAdSpApZz_jFMxL4t-w0lNLoPrwVcSinxKVjbHOaqRrN9qpw3w/exec'
 			const form = document.forms['myForm']
+
+    
+      let file = document.querySelector("#img");
+      // let imge = document.querySelector("imge");
+      file.addEventListener('change',()=>{
+        let fr = new FileReader();
+        fr.addEventListener('loadend',()=>{
+            let res = fr.result;
+            // imge.src=res;
+            let spt = res.split("base64,")[1];
+            // console.log(spt);
+            let obj = {
+                base64:spt,
+                type:file.files[0].type,
+                name:file.files[0].name
+            }
+            fetch(scriptURL,{
+                method:"POST",
+                body:JSON.stringify(obj)
+            })
+            .then(r=>r.text())
+            .then(data=>console.log(data))
+ 
+        })
+        fr.readAsDataURL(file.files[0])
+      })
 		  
 			form.addEventListener('submit', e => {
 			  e.preventDefault()
