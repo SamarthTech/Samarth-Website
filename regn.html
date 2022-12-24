@@ -83,7 +83,13 @@
           <input type="text" id="department" name="dept" required>
 
           <label for="roll">Roll Number:</label>
-          <input type="number" id="roll" name="roll" required>
+          <input type="number" id="roll" name="roll">
+          
+          <label for="img">DLSR Number(For DSLR Users only):</label>
+          <input type="text" id="dslr" name="dslr">
+
+          <label for="img">Image URL(Drive View only link):</label>
+          <input type="url" id="img" name="image" required>
 
           <label>Year:</label>
           <input type="radio" id="year1" value="year1" name="year"><label for="year1" class="light">First
@@ -99,8 +105,11 @@
 
           <legend><span class="number">2</span> Registration Details</legend>
 
-          <label for="event">Events:</label>
+          <label for="event">Event:</label>
           <select id="event" name="event">
+            <optgroup label="Photography">
+              <option value="photography">Photography Selection</option>
+            </optgroup>
             <optgroup label="Clash of Creativity">
               <option value="web1.o">Webathon 1.O</option>
               <option value="poster design">Poster Design</option>
@@ -130,8 +139,7 @@
 
         </fieldset>
 
-        <label for="img">Image:</label>
-          <input type="file" accept="image/*" id="img" name="img">
+        
 
         <!-- <button type="submit">Register</button> -->
         <button class="button" type="submit">
@@ -144,34 +152,34 @@
     </div>
   </div>
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyhTdGwKprq42HjWr3mNAdSpApZz_jFMxL4t-w0lNLoPrwVcSinxKVjbHOaqRrN9qpw3w/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyfLzDQxfzwqRs6HXySa4xPKeyDP11U3Gwl6v6V6WMJXvfZEERvV-PcCPpYkaEZbdXT/exec'
 			const form = document.forms['myForm']
 
     
-      let file = document.querySelector("#img");
-      // let imge = document.querySelector("imge");
-      file.addEventListener('change',()=>{
-        let fr = new FileReader();
-        fr.addEventListener('loadend',()=>{
-            let res = fr.result;
-            // imge.src=res;
-            let spt = res.split("base64,")[1];
-            // console.log(spt);
-            let obj = {
-                base64:spt,
-                type:file.files[0].type,
-                name:file.files[0].name
-            }
-            fetch(scriptURL,{
-                method:"POST",
-                body:JSON.stringify(obj)
-            })
-            .then(r=>r.text())
-            .then(data=>console.log(data))
+      // let file = document.querySelector("#img");
+      // // let imge = document.querySelector("imge");
+      // file.addEventListener('change',()=>{
+      //   let fr = new FileReader();
+      //   fr.addEventListener('loadend',()=>{
+      //       let res = fr.result;
+      //       // imge.src=res;
+      //       let spt = res.split("base64,")[1];
+      //       // console.log(spt);
+      //       let obj = {
+      //           base64:spt,
+      //           type:file.files[0].type,
+      //           name:file.files[0].name
+      //       }
+      //       fetch(scriptURL,{
+      //           method:"POST",
+      //           body:JSON.stringify(obj)
+      //       })
+      //       .then(r=>r.text())
+      //       .then(data=>console.log(data))
  
-        })
-        fr.readAsDataURL(file.files[0])
-      })
+      //   })
+      //   fr.readAsDataURL(file.files[0])
+      // })
 		  
 			form.addEventListener('submit', e => {
 			  e.preventDefault()
@@ -182,32 +190,46 @@
 			})
   </script>
   <script>
-    const button = document.querySelector('.button');
-    const submit = document.querySelector('.submit');
+  //   const button = document.querySelector('.button');
+  //   const submit = document.querySelector('.submit');
     
-    const name = document.getElementById("name");
-    const nameValue = name.value.trim();
-    const mail = document.getElementById("mail");
-    const mailValue = mail.value.trim();
-    const tel = document.getElementById("tel")
-    const telValue =tel.value.trim()
-    const roll = document.getElementById("roll")
-    const rollValue =roll.value.trim()
+  //   const name = document.getElementById("name");
+  //   const nameValue = name.value.trim();
+  //   const mail = document.getElementById("mail");
+  //   const mailValue = mail.value.trim();
+  //   const tel = document.getElementById("tel")
+  //   const telValue =tel.value.trim()
+  //   const roll = document.getElementById("roll")
+  //   const rollValue =roll.value.trim()
     
-    const department = document.getElementById("department")
-    const departmentValue =department.value.trim()
-    function toggleClass() {
-      if(nameValue == "" || mailValue==""|| telValue==""|| rollValue==""|| departmentValue=="")
-      {
-        //no changes
-       // this.classList.toggle('active');
-      }  
-      else if(nameValue != "")
-      {
+  //   const department = document.getElementById("department")
+  //   const departmentValue =department.value.trim()
+  //   function toggleClass() {
+  //     if(nameValue == "" || mailValue==""|| telValue==""|| rollValue==""|| departmentValue=="")
+  //     {
+  //       //no changes
+  //      // this.classList.toggle('active');
+  //     }  
+  //     else if(nameValue != "")
+  //     {
 
-        this.classList.toggle('active'); 
+  //       this.classList.toggle('active'); 
+  //   }
+  // }
+  //   function addClass() {
+  //     this.classList.add('finished');
+  //   }
+    
+  //   button.addEventListener('click', toggleClass);
+  //   button.addEventListener('transitionend', toggleClass);
+  //   button.addEventListener('transitionend', addClass);
+  const button = document.querySelector('.button');
+    const submit = document.querySelector('.submit');
+
+    function toggleClass() {
+      this.classList.toggle('active');
     }
-  }
+
     function addClass() {
       this.classList.add('finished');
     }
