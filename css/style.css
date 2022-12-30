@@ -768,8 +768,6 @@
   justify-content: center;
 }
 #photography{
-  /* display: grid;
-  grid-template-columns: 2fr 2fr; */
   display: flex;
   flex-direction: row;
   justify-content: center;
