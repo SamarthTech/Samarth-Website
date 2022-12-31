@@ -772,7 +772,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: gainsboro;
+  background-color: rgb(222, 222, 222);
   border-radius: 10px;
   margin:1rem 1rem 1rem 1rem;
   padding: 2rem 1.5rem;
@@ -796,7 +796,7 @@
   justify-content: left;
 }
 .right #participate:hover{
-  background-color: #14e2b9;
+  background-color: #e514db;
   transition: all 0.4s ease-in-out;
 }
 .right ol{
