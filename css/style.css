@@ -780,12 +780,12 @@
 .left{
   display: grid;
   justify-content: left;
-  margin-right: 20px;
+  margin-right: 4.5rem;
 }
 .left img{
-  width: 350px;
-  height: 350px;
-  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  border-radius: 7px;
 }
 .right h3{
   display: grid;
@@ -820,6 +820,12 @@
 }
 
 @media(max-width:1074px){
+
+  .left img{
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+  }
   .live{
     display: flex;
     align-items: center;
@@ -828,8 +834,10 @@
   #photography{
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
   .left{
+    margin: auto;
     margin-bottom:10px ;
   }
   .right #participate{
