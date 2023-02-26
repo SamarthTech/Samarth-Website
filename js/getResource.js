@@ -1,36 +1,36 @@
 /* Source Logic */
-let selectCategoryBtn = document.querySelectorAll('.select-category-btn');
+let selectCategoryBtn = document.querySelectorAll(".select-category-btn");
 // Contribution and Resource Box
-const resourceBox = document.getElementById('resourceBox');
-const contributionGuidline = document.getElementById('contributionGuideline');
+const resourceBox = document.getElementById("resourceBox");
+const contributionGuidline = document.getElementById("contributionGuideline");
 // Resource Showcase Section
 // const beginnerResourceBox = document.getElementById('beginnerResourceBox');
 // const intermediateResourceBox = document.getElementById('intermediateResourceBox',);
 
-contributionBtn.addEventListener('click', (e) => {
-  resourceBox.style.display = 'none';
-  resourceBox1.style.display = 'none';
-  contributionGuidline.style.display = 'block';
-  contributionBtn.style.backgroundColor = '#6940d3';
-  contributionBtn.style.color = '#fff';
+contributionBtn.addEventListener("click", (e) => {
+  resourceBox.style.display = "none";
+  resourceBox1.style.display = "none";
+  contributionGuidline.style.display = "block";
+  contributionBtn.style.backgroundColor = "#6940d3";
+  contributionBtn.style.color = "#fff";
   for (let j = 0; j < category.length; j++) {
-    selectBtn[j].style.backgroundColor = '#fff';
-    selectBtn[j].style.color = '#000';
+    selectBtn[j].style.backgroundColor = "#fff";
+    selectBtn[j].style.color = "#000";
   }
   for (let i = 0; i < category.length; i++) {
-    let x = category[i].querySelector('.select-option');
-    x.style.display = 'none';
+    let x = category[i].querySelector(".select-option");
+    x.style.display = "none";
   }
 });
 
-
 // ************************************************JS for each section*******************************************************************
 // *********************************************************Complete*********************************************************************
-const ESE = document.getElementById('ESE');
-const UPSC = document.getElementById('UPSC');
+const ESE = document.getElementById("ESE");
+const UPSC = document.getElementById("UPSC");
+const CAT = document.getElementById("CAT");
 
-ESE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
+ESE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
   // resourceBox.style.display = 'none';
   // resourceBox.style.display = 'block';
 
@@ -66,17 +66,16 @@ ESE.addEventListener('click', (e) => {
     <div class="row mt-2" id="projectsResourceBox"></div>
     </div>`;
 
-  resourceBox1.style.display = 'block';
+  resourceBox1.style.display = "block";
 
   // Method 2
-  //else use this >> 
+  //else use this >>
   // resourceBox2.style.display = 'block';
   // resourceBox1.style.display = 'none';
+});
 
-})
-
-UPSC.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
+UPSC.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
   // resourceBox.style.display = 'none';
   // resourceBox.style.display = 'block';
 
@@ -140,155 +139,207 @@ UPSC.addEventListener('click', (e) => {
     <div class="row mt-2" id="projectsResourceBox"></div>
     </div>`;
 
-  resourceBox1.style.display = 'block';
+  resourceBox1.style.display = "block";
 
   // Method 2
-  //else use this >> 
+  //else use this >>
   // resourceBox2.style.display = 'block';
   // resourceBox1.style.display = 'none';
+});
 
-})
+CAT.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  // resourceBox.style.display = 'none';
+  // resourceBox.style.display = 'block';
+
+  //Method 1
+  resourceBox1.innerHTML = `
+  <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
+  <div class="container mt-3" id="resourceBox1">
+  <!--Beginner Resource Box-->
+  <h4 class="resource-heading">What is CAT?</h4>
+  <p>CAT exam stands for Common Admission Test, which is a computer-based test conducted in India for admission to management programs offered by various Indian Institutes of Management (IIMs) and other leading business schools. The exam is conducted once a year in the month of November. The CAT exam is highly competitive and attracts a large number of applicants every year. 
+  </p>
+  <div class="row" id="beginnerResourceBox"></div>
+  <h4 class="resource-heading">Eligibility:</h4>
+  <h6 class="resource-subheading">Educational Qualification:</h6>
+  <p>The candidate must have completed a Bachelor's degree or an equivalent qualification from a recognized university or institution. Candidates who are in the final year of their Bachelor's degree program are also eligible to apply.
+  </p>
+  <h6 class="resource-subheading">Other Criteria:</h6>
+  <p>The candidate must have a valid email address and phone number, as all communication regarding the exam will be done through these channels. The candidate must also have a valid government-issued ID proof, such as Aadhar card, passport, PAN card, driving license, etc.
+  </p>
+  <h4 class="resource-heading">Exam Pattern:</h4>
+  <p>The exam consists of three sections:
+  </p>
+  <ul style="list-style-type:disc;">
+  <li><h6 class="resource-subheading">Verbal Ability and Reading Comprehension (VARC)</li></h6>
+  <li><h6 class="resource-subheading">Data Interpretation and Logical Reasoning (DILR)</li></h6>
+  <li><h6 class="resource-subheading">Quantitative Ability (QA)</li></h6></ul>
+  <p>The duration of the exam is 2 hours and 40 minutes, and it consists of 100 multiple-choice questions.The CAT exam tests a candidate's aptitude in quantitative techniques, data interpretation, logical reasoning, and language skills. The exam pattern is designed to assess a candidate's problem-solving ability, analytical thinking, and decision-making skills. </p>
+    <h4 class="resource-heading">Marks Pattern:</h4>
+    <p>
+    <b>Verbal Ability and Reading Comprehension (VARC):</b> This section consists of 34 questions and carries a total of 102 marks. 
+    </p>
+    <p>
+    <b>Data Interpretation and Logical Reasoning (DILR):</b> This section consists of 32 questions and carries a total of 96 marks. The questions are designed to test a candidate's ability to analyse and interpret complex data sets, and to identify logical patterns and structures.</p>
+    <p>
+    <b>Quantitative Ability (QA):</b> This section consists of 34 questions and carries a total of 102 marks. The questions are designed to test a candidate's mathematical skills, including arithmetic, algebra, geometry, and trigonometry.</p>    <div class="row mt-2" id="intermediateResourceBox"></div>
+    <h4 class="resource-heading">Perks of Cracking CAT?</h4>
+    <ul style="list-style-type:disc;">
+    <li>One of the biggest perks of cracking the CAT exam is the opportunity to get admission to some of the top business schools in India, such as the Indian Institutes of Management (IIMs) and other leading management institutes.</li>
+    <li>After completing their management program, CAT graduates can expect to get job offers from some of the best companies in the world. Top recruiters from various industries such as consulting, finance, marketing, and technology visit these campuses to hire students, offering them high-paying job roles and attractive perks.</li>
+    <li>A management degree from a top business school can also equip candidates with the necessary skills and knowledge to start their own business.</li>
+    </ul>
+    <!--Advanced Resource Box -->
+    <div class="row mt-2" id="advancedResourceBox"></div>
+    <h4 class="resource-heading"></h4>
+    <div class="row mt-2" id="projectsResourceBox"></div>
+    </div>`;
+
+  resourceBox1.style.display = "block";
+
+  // Method 2
+  //else use this >>
+  // resourceBox2.style.display = 'block';
+  // resourceBox1.style.display = 'none';
+});
 
 // ************************************************************************************
 // ********************************************************Incomplete Section********************************************************
-const CSE = document.getElementById('CSE');
-const ECE = document.getElementById('ECE');
-const SSC = document.getElementById('SSC');
-const CDS = document.getElementById('CDS');
-const AFCAT = document.getElementById('AFCAT');
-const GATE = document.getElementById('GATE');
-const EE = document.getElementById('EE');
-const ME = document.getElementById('ME');
-const CE = document.getElementById('CE');
-const ARCH = document.getElementById('ARCH');
-const CAT = document.getElementById('CAT');
-const ESEME = document.getElementById('ESEME');
-const ESEEE = document.getElementById('ESEEE');
-const ESEECE = document.getElementById('ESEECE');
-const ESECE = document.getElementById('ESECE');
-const resourceBox1 = document.getElementById('resourceBox1');
-const resourceBox2 = document.getElementById('resourceBox2');
+const CSE = document.getElementById("CSE");
+const ECE = document.getElementById("ECE");
+const SSC = document.getElementById("SSC");
+const CDS = document.getElementById("CDS");
+const AFCAT = document.getElementById("AFCAT");
+const GATE = document.getElementById("GATE");
+const EE = document.getElementById("EE");
+const ME = document.getElementById("ME");
+const CE = document.getElementById("CE");
+const ARCH = document.getElementById("ARCH");
+const ESEME = document.getElementById("ESEME");
+const ESEEE = document.getElementById("ESEEE");
+const ESEECE = document.getElementById("ESEECE");
+const ESECE = document.getElementById("ESECE");
+const resourceBox1 = document.getElementById("resourceBox1");
+const resourceBox2 = document.getElementById("resourceBox2");
 
-
-
-SSC.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+SSC.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-CDS.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+CDS.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-AFCAT.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+AFCAT.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-ESEME.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+ESEME.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-ESEEE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+ESEEE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-ESEECE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+ESEECE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-ESECE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+ESECE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-GATE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+GATE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-CE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+CE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-ME.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+ME.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-EE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+EE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-ARCH.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+ARCH.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-CDS.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+CDS.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 
-
-CSE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+CSE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
 
-ECE.addEventListener('click', (e) => {
-  contributionGuidline.style.display = 'none';
-  resourceBox1.style.display = 'block';
+ECE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
     <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
       <h4 class="resource-heading center">To be Updated Soon!</h4>
