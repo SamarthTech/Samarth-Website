@@ -184,7 +184,7 @@ CAT.addEventListener("click", (e) => {
     <b>Data Interpretation and Logical Reasoning (DILR):</b> This section consists of 32 questions and carries a total of 96 marks. The questions are designed to test a candidate's ability to analyse and interpret complex data sets, and to identify logical patterns and structures.</p>
     <p>
     <b>Quantitative Ability (QA):</b> This section consists of 34 questions and carries a total of 102 marks. The questions are designed to test a candidate's mathematical skills, including arithmetic, algebra, geometry, and trigonometry.</p>    <div class="row mt-2" id="intermediateResourceBox"></div>
-    <h4 class="resource-heading">Perks of Cracking CAT?</h4>
+    <h4 class="resource-heading">Perks of Cracking CAT:</h4>
     <ul style="list-style-type:disc;">
     <li>One of the biggest perks of cracking the CAT exam is the opportunity to get admission to some of the top business schools in India, such as the Indian Institutes of Management (IIMs) and other leading management institutes.</li>
     <li>After completing their management program, CAT graduates can expect to get job offers from some of the best companies in the world. Top recruiters from various industries such as consulting, finance, marketing, and technology visit these campuses to hire students, offering them high-paying job roles and attractive perks.</li>
