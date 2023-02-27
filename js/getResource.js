@@ -28,6 +28,7 @@ contributionBtn.addEventListener("click", (e) => {
 const ESE = document.getElementById("ESE");
 const UPSC = document.getElementById("UPSC");
 const CAT = document.getElementById("CAT");
+const GATE = document.getElementById("GATE");
 
 ESE.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
@@ -204,6 +205,61 @@ CAT.addEventListener("click", (e) => {
   // resourceBox1.style.display = 'none';
 });
 
+GATE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
+  resourceBox1.innerHTML = `
+  <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
+  <div class="container mt-3" id="resourceBox1">
+  <!--Beginner Resource Box-->
+  <h4 class="resource-heading">What is GATE EXAM?</h4>
+  <p>Graduate Aptitude Test in Engineering (GATE) is an examination which is conducted for Master of Engineering (ME), Masters in Technology (MTech) and direct PhD admissions to Indian Institutes of Technology (IITs), National Institutes of Technology (NITs), Indian Institutes of Information Technology (IIITs) and other institutes/universities across India. It also opens the gateway to booming public sector organisations (PSUs) and in the field of research. Some of the PSUs and research organizations which use GATE score for providing jobs include ONGC, NTPC, GAIL, HPCL, PGCIL, BHEL, BSNL, HPCL, NHPC, BARC, DRDO, etc.
+  </p>
+  <p>GATE is an All-India examination administered and conducted in eight zones across the country by the GATE Committee comprising of faculty members from IISc, Bangalore and other seven IIT’s on behalf of the National Coordinating Board, Department of Education, Ministry of Human Resources Development.</p>
+  <div class="row" id="beginnerResourceBox"></div>
+  <h4 class="resource-heading">What’s New?</h4>
+  <ul style="list-style-type:disc;">
+  <li><h6 class="resource-subheading">Two new subjects:</h6>
+  <p>Geomatics Engineering (GE) and Naval Architecture and Marine Engineering (NM). The total number of subjects has increased to 29.
+  </p></li>
+  <li><h6 class="resource-subheading">Paper Combination:</h6>
+  <p>In another newly introduced change, students applying for GATE EXAM 2023 can also opt for two different papers from the prescribed set of combinations.
+  </p></li>
+  <li><h6 class="resource-subheading">Eligibility:</h6>
+  <p>Eligibility criteria to appear for GATE-2023 is relaxed from the minimum 10+2+4 (ongoing) to minimum 10+2+3 (ongoing), enabling even those in the third year of their undergraduate studies to appear for the examination, thus providing an additional opportunity to candidates to improve their performance to secure better career options.
+  </p></li>
+  <li><h6 class="resource-subheading">Exam Pattern:</h6>
+  <p>All test papers of GATE EXAM 2023 will be entirely objective type. Pattern of questions may include (i) Multiple Choice Questions (MCQ), (ii) Multiple Select Questions (MSQ), and/or (iii) Numerical Answer Type (NAT) questions.
+  </p></li></ul>
+  <h4 class="resource-heading">GATE Subject Codes:</h4>
+  <p>While filling GATE form, candidates can apply for two subject papers from the prescribed set of combinations out of the 29 papers listed in the table given below. Candidates are expected to appear in a paper appropriate to the discipline of their qualifying degree. However, candidates are free to choose any paper according to their admission plan, keeping in mind the eligibility criteria of the institutions in which they wish to seek admission.
+  </p>
+  <img src = "images/code1.png" class="responsive">
+  <img src = "images/code2.png" class="responsive"><br><br>
+
+  <h4 class="resource-heading">With a successful attempt in GATE, an aspirant can choose the most suitable option from wide range of roads to travel to his final career destination :</h4>
+  <ul style="list-style-type:disc;">
+  <li>Students can pursue M.Tech/M.S/ M.E/Ph.D from IISc Bangalore, IITs, NITs, IIITs and other reputed institutes.</li>
+  <li>Students can pursue Post Graduate Diploma in Industrial Engineering (PGDIE), Post Graduate Diploma in Manufacturing Management(PGDMM), Post Graduate Diploma in Project Management(PGDPM) from NITIE Mumbai.</li>
+  <li>Several reputed Maharatna and Navratna PSUs and research organizations recruit on basis of GATE Score. i.e. IOCL, NTPC, BHEL, PGCIL, BARC, CSIR etc.</li>
+  <li>Teaching: Professor, Asst. Professor at IITs, NITs and other reputed educational institutes.</li>
+  <li>Junior Research Fellow: ISRO, DRDO, BARC, CSIR, IITs etc.</li>
+  <li>Senior Research Fellow: ISRO, DRDO, BARC, CSIR, IITs etc.</li>
+  <li>Junior/Senior Research Associates.</li>
+  <li>Scientists “C” grade jobs.</li>
+  <li>Lucrative opportunities in research & development after post-graduation.</li>
+  <li>Multinational firms shortlist candidates on the basis of GATE score.</li>
+  <li>Some international universities offers M.S or Ph.D programs on the basis of GATE Score.</li>
+  </ul>
+
+
+  <!--Advanced Resource Box -->
+    <div class="row mt-2" id="advancedResourceBox"></div>
+    <h4 class="resource-heading"></h4>
+    <div class="row mt-2" id="projectsResourceBox"></div>
+    </div>`;
+});
+
 // ************************************************************************************
 // ********************************************************Incomplete Section********************************************************
 const CSE = document.getElementById("CSE");
@@ -211,7 +267,6 @@ const ECE = document.getElementById("ECE");
 const SSC = document.getElementById("SSC");
 const CDS = document.getElementById("CDS");
 const AFCAT = document.getElementById("AFCAT");
-const GATE = document.getElementById("GATE");
 const EE = document.getElementById("EE");
 const ME = document.getElementById("ME");
 const CE = document.getElementById("CE");
@@ -279,14 +334,7 @@ ESECE.addEventListener("click", (e) => {
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-GATE.addEventListener("click", (e) => {
-  contributionGuidline.style.display = "none";
-  resourceBox1.style.display = "block";
-  resourceBox1.innerHTML = `
-    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading center">To be Updated Soon!</h4>
-    </div>`;
-});
+
 CE.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
   resourceBox1.style.display = "block";
