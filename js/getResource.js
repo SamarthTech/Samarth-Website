@@ -29,6 +29,9 @@ const ESE = document.getElementById("ESE");
 const UPSC = document.getElementById("UPSC");
 const CAT = document.getElementById("CAT");
 const GATE = document.getElementById("GATE");
+const ECE = document.getElementById("ECE");
+const CSE = document.getElementById("CSE");
+
 
 ESE.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
@@ -260,10 +263,56 @@ GATE.addEventListener("click", (e) => {
     </div>`;
 });
 
+ECE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
+  resourceBox1.innerHTML = `
+  <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
+  <div class="container mt-3" id="resourceBox1">
+  <!--Beginner Resource Box-->
+  <h4 class="resource-heading">Syllabus for GATE ECE:</h4>
+  <p>The GATE (Graduate Aptitude Test in Engineering) syllabus for Electronics and Communication Engineering (ECE) is as follows:
+  </p>
+  <ul style="list-style-type:disc;">
+  <li><h6 class="resource-subheading">Engineering Mathematics:</h6>
+  <p>Linear Algebra, Calculus, Differential equations, Complex variables, Probability and Statistics, Numerical Methods, Transform Theory
+  </p></li>
+  <li><h6 class="resource-subheading">Networks, Signals, and Systems:</h6>
+  <p>Network solution methods, Network theorems, Resonant circuits, Filters, Time-domain analysis of signals and systems, Fourier series, Fourier transform, Laplace transform, Z-transform, Continuous-time and discrete-time signals, and systems, Sampled data systems, Pulse shaping, Signal transmission through linear time-invariant systems.
+  </p></li>
+  <li><h6 class="resource-subheading">Electronic Devices:</h6>
+  <p>Energy bands in intrinsic and extrinsic silicon, Carrier transport in a semiconductor, Carrier generation and recombination, p-n junction diode, BJT, MOS capacitor, MOSFET, LED, p-I-n and avalanche photo-diode, Basics of LASERs, Tunnel diodes, Zener diodes, Schottky diodes, Rectifiers, and power supplies.
+  </p></li>
+  <li><h6 class="resource-subheading">Analog Circuits:</h6>
+  <p>Small signal equivalent circuits of diodes, BJTs, and MOSFETs, Simple diode circuits, Clipping, clamping, rectifier circuits, Biasing and bias stability of transistor and FET amplifiers, Amplifiers: single and multi-stage, differential, operational, feedback and power, the Frequency response of amplifiers, Simple op-amp circuits, Filters, Sinusoidal oscillators; criterion for oscillation; single-transistor and op-amp configurations, Function generators, Wave-shaping circuits.
+  </p></li>
+  <li><h6 class="resource-subheading">Digital Circuits:</h6>
+  <p>Boolean algebra, minimization of Boolean functions, Logic gates, Digital IC families (DTL, TTL, ECL, MOS, CMOS), Combinational circuits: arithmetic circuits, code converters, multiplexers, and decoders, Sequential circuits: latches and flip-flops, counters and shift-registers, Sample and hold circuits, ADCs and DACs, Semiconductor memories, Microprocessor (8085): architecture, programming, memory, and I/O interfacing.
+  </p></li>
+  <li><h6 class="resource-subheading">Control Systems:</h6>
+  <p>Basic control system components; block diagrammatic description, reduction of block diagrams, Signal flow graphs, Mason's Gain formula, Time domain analysis of control systems, Stability; Routh-Hurwitz criterion, Root loci, Bode and Nyquist plots, Feedback compensators, Lag, lead and lag-lead compensators, Digital control: basics, sampling, reconstruction, and aliasing; design of digital controllers.
+  </p></li>
+  <li><h6 class="resource-subheading">Communications:</h6>
+  <p>Random processes: autocorrelation and power spectral density, properties of white noise, filtering of random signals through LTI systems, Analog communications: amplitude modulation and demodulation, angle modulation and demodulation, spectra of AM and FM, superheterodyne receivers, circuits for analog communications, Digital communications: PCM, DPCM, digital modulation schemes (ASK, PSK, FSK, QAM), the bandwidth of digital modulation schemes, SNR and BER for digital modulation, Fundamentals of information theory and channel capacity theorem.
+  </p></li>
+  <li><h6 class="resource-subheading">Electromagnetics:</h6>
+  <p>Electrostatics; Maxwell’s equations; wave propagation in free space, dielectrics, and conductors; transmission lines: characteristic impedance; impedance transformation; Smith chart; impedance matching; waveguides; basics of antenna radiation: pattern, gain, and directivity; basics of radar: pulsed and CW radars, radar equation, and matched filter.
+  </p></li>
+  </ul>
+  <h4 class="resource-heading">Marking Scheme:</h4>
+  <img src="images/ece.png" class="responsive">
+  <!--Advanced Resource Box -->
+    <div class="row mt-2" id="advancedResourceBox"></div>
+    <h4 class="resource-heading"></h4>
+    <div class="row mt-2" id="projectsResourceBox"></div>
+    </div>`;
+});
+
+
+
+
 // ************************************************************************************
 // ********************************************************Incomplete Section********************************************************
-const CSE = document.getElementById("CSE");
-const ECE = document.getElementById("ECE");
 const SSC = document.getElementById("SSC");
 const CDS = document.getElementById("CDS");
 const AFCAT = document.getElementById("AFCAT");
@@ -375,17 +424,7 @@ CDS.addEventListener("click", (e) => {
       <h4 class="resource-heading center">To be Updated Soon!</h4>
     </div>`;
 });
-
 CSE.addEventListener("click", (e) => {
-  contributionGuidline.style.display = "none";
-  resourceBox1.style.display = "block";
-  resourceBox1.innerHTML = `
-    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading center">To be Updated Soon!</h4>
-    </div>`;
-});
-
-ECE.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
   resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
