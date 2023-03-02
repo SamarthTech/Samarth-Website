@@ -31,6 +31,7 @@ const CAT = document.getElementById("CAT");
 const GATE = document.getElementById("GATE");
 const ECE = document.getElementById("ECE");
 const CSE = document.getElementById("CSE");
+const EE = document.getElementById("EE");
 
 
 ESE.addEventListener("click", (e) => {
@@ -308,6 +309,57 @@ ECE.addEventListener("click", (e) => {
     </div>`;
 });
 
+EE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
+  resourceBox1.innerHTML = `
+  <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
+  <div class="container mt-3" id="resourceBox1">
+  <!--Beginner Resource Box-->
+  <h4 class="resource-heading">Syllabus for GATE EE:</h4>
+  <p>The GATE (Graduate Aptitude Test in Engineering) syllabus for Electronics Engineering (EE) is as follows:
+  </p>
+  <ul style="list-style-type:disc;">
+  <li><h6 class="resource-subheading">Engineering Mathematics:</h6>
+  <p>Linear Algebra, Calculus, Differential equations, Complex variables, Probability and Statistics, Numerical Methods, Transform Theory
+  </p></li>
+  <li><h6 class="resource-subheading">Electric Circuits:</h6>
+  <p>Network graph, KCL, KVL, Node and Mesh analysis, Circuit theorems, One-port and two-port networks, Resonant circuits, Passive filters, Ideal current and voltage sources, Thevenin’s, Norton’s and Superposition and Maximum Power Transfer theorems, Two-element devices, Three-phase circuits, Power and power factor in ac circuits.
+  </p></li>
+  <li><h6 class="resource-subheading">Electromagnetic Fields:</h6>
+  <p>Coulomb's Law, Electric Field Intensity, Electric Flux Density, Gauss's Law, Divergence, Curl, Ampere's Law, Magnetic Field Intensity, Magnetic Flux Density, Faraday's Law, Electromagnetic Induction, Maxwell's equations, Wave equations, Poynting theorem, Transmission lines, Waveguides, Antennas, Radar Equation.
+  </p></li>
+  <li><h6 class="resource-subheading">Signals and Systems:</h6>
+  <p>Representation of continuous and discrete-time signals, Linear Time-Invariant (LTI) Systems, Fourier series representation of continuous periodic signals, Fourier Transform and properties, Laplace Transform and properties, Z-Transform and properties, Discrete Fourier Transform and Fast Fourier Transform, Convolution and Correlation of signals, Sampling theorem and applications, Linear Time-Invariant (LTI) Systems impulse response, transfer function, and frequency response, Stability and causality.
+  </p></li>
+  <li><h6 class="resource-subheading">Electrical Machines:</h6>
+  <p>Single-phase transformer: equivalent circuit, phasor diagram, open-circuit and short-circuit tests, Regulation, Efficiency; Three-phase transformers: connections, parallel operation; Auto-transformer, Electromechanical energy conversion principles, DC machines: separately excited, series and shunt, motoring and generating mode of operation and their characteristics, starting and speed control of DC motors, Three-phase induction motors: the principle of operation, types, performance, torque-speed characteristics, no-load and blocked rotor tests, equivalent circuit, starting and speed control, squirrel cage and slip-ring induction motors; Single-phase induction motors: types, performance, starting and speed control; Permanent magnet synchronous motors, synchronous generators, regulation, parallel operation, synchronous condensers, fractional horsepower motors and other special machines.
+  </p></li>
+  <li><h6 class="resource-subheading">Power Systems:</h6>
+  <p>Power generation concepts, ac and dc transmission concepts, Models and performance of transmission lines and cables, Series and shunt compensation, Electric field distribution and insulators, Distribution systems, Per-unit quantities, Bus admittance matrix, Gauss-Seidel and Newton-Raphson load flow methods, Voltage and Frequency control, Power factor correction, Symmetrical components, Symmetrical and unsymmetrical fault analysis, Principles of over-current, differential and distance protection, Circuit breakers, System stability concepts, Equal area criterion.
+  </p></li>
+  <li><h6 class="resource-subheading">Control Systems:</h6>
+  <p>Mathematical modeling and representation of systems, Feedback principle, transfer function, block diagrams, signal flow graphs, Time response of systems, steady-state errors, Routh-Hurwitz criterion, Nyquist and Bode plots, Root locus, Stability analysis, Lag, lead and lag-lead compensation, State space model, State transition matrix, Controllability and Observability, Linear Time-Invariant (LTI) Systems analysis, Nonlinear systems, Frequency response analysis.
+  </p></li>
+  <li><h6 class="resource-subheading">Electrical and Electronic Measurements:</h6>
+  <p>Bridges and Potentiometers, Measurement of voltage, current, power, energy, and power factor, Instrument transformers, Digital voltmeters, and multimeters, Phase, Time, and Frequency measurement, Oscilloscopes, Error analysis, Measurement of Electrical quantities, Transducers and their applications in the measurement of non-electrical quantities, Instrumentation amplifiers, Signal conditioning circuits, Data acquisition system basics.
+  </p></li>
+  </ul>
+  <h4 class="resource-heading">Marking Scheme:</h4>
+  <img src="images/EE.png" class="responsive">
+  <h4 class="resource-heading">Important Topics and Books:</h4>
+  <img src="images/ee-1.png" class="responsive">
+  <img src="images/ee-2.png" class="responsive">
+  <img src="images/ee-3.png" class="responsive">
+  <img src="images/ee-4.png" class="responsive">
+
+  <!--Advanced Resource Box -->
+    <div class="row mt-2" id="advancedResourceBox"></div>
+    <h4 class="resource-heading"></h4>
+    <div class="row mt-2" id="projectsResourceBox"></div>
+    </div>`;
+});
+
 
 
 
@@ -316,7 +368,6 @@ ECE.addEventListener("click", (e) => {
 const SSC = document.getElementById("SSC");
 const CDS = document.getElementById("CDS");
 const AFCAT = document.getElementById("AFCAT");
-const EE = document.getElementById("EE");
 const ME = document.getElementById("ME");
 const CE = document.getElementById("CE");
 const ARCH = document.getElementById("ARCH");
@@ -393,14 +444,6 @@ CE.addEventListener("click", (e) => {
     </div>`;
 });
 ME.addEventListener("click", (e) => {
-  contributionGuidline.style.display = "none";
-  resourceBox1.style.display = "block";
-  resourceBox1.innerHTML = `
-    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading center">To be Updated Soon!</h4>
-    </div>`;
-});
-EE.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
   resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
