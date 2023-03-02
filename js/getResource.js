@@ -360,6 +360,65 @@ EE.addEventListener("click", (e) => {
     </div>`;
 });
 
+CSE.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  resourceBox1.style.display = "block";
+  resourceBox1.innerHTML = `
+  <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
+  <div class="container mt-3" id="resourceBox1">
+  <!--Beginner Resource Box-->
+  <h4 class="resource-heading">Syllabus for GATE CSE/IT:</h4>
+  <p>The GATE (Graduate Aptitude Test in Engineering) syllabus for Computer Science Engineering (CSE) or Information Technology (IT) is as follows:
+  </p>
+  <ul style="list-style-type:disc;">
+  <li><h6 class="resource-subheading">Engineering Mathematics:</h6>
+  <p>Discrete Mathematics, Linear Algebra, Calculus, Probability, Graph Theory, Combinatorics, Set Theory, Numerical Methods.
+  </p></li>
+  <li><h6 class="resource-subheading">Digital Logic:</h6>
+  <p>Boolean Algebra, Combinational and Sequential Circuits, Minimization, Number Representation and Computer Arithmetic, Memory elements, MSI, and LSI components.
+  </p></li>
+  <li><h6 class="resource-subheading">Computer Organization and Architecture:</h6>
+  <p>Machine instructions and addressing modes, ALU, Data-path and Control unit, Instruction pipelining, Cache and main memory, Secondary storage, I/O interface (Interrupt and DMA mode), Instruction pipelining, Concept of RISC and CISC.
+  </p></li>
+  <li><h6 class="resource-subheading">Programming and Data Structures:</h6>
+  <p>Programming in C, C++, and Java, Recursion, Arrays, Stacks, Queues, Linked Lists, Trees, Graphs, Heaps, Searching and Sorting.
+  </p></li>
+  <li><h6 class="resource-subheading">Algorithms:</h6>
+  <p>Analysis, Sorting and Searching Algorithms, Asymptotic Notation, Recurrence Relations, Greedy Algorithms, Dynamic Programming, Divide and Conquer, Graph Algorithms, String Algorithms.
+  </p></li>
+  <li><h6 class="resource-subheading">Theory of Computation:</h6>
+  <p>Regular languages and finite automata, Context-free languages and push-down automata, Turing Machines, Undecidability.
+  </p></li>
+  <li><h6 class="resource-subheading">Compiler Design:</h6>
+  <p>Lexical Analysis, Parsing, Syntax-Directed Translation, Run-Time Environments, Intermediate Code Generation, Code Generation, Optimization.
+  </p></li>
+  <li><h6 class="resource-subheading">Operating System:</h6>
+  <p>Process Management, CPU Scheduling, Deadlocks, Memory Management and Virtual Memory, File Systems, I/O Systems, Protection, and Security.
+  </p></li>
+  <li><h6 class="resource-subheading">Databases:</h6>
+  <p>Relational Model, ER Model, Relational Algebra, SQL, Transactions, Normalization, Query Optimization, File Structures.
+  </p></li>
+  <li><h6 class="resource-subheading">Computer Networks:</h6>
+  <p>ISO/OSI stack, TCP/IP stack, Data link control protocols, Network layer protocols, Transport layer protocols, Application layer protocols, Network Security, Cryptography, Digital Signatures.
+  </p></li>
+  <li><h6 class="resource-subheading">Software Engineering:</h6>
+  <p>Software Development Life Cycle, Requirements Engineering, Software Design, Software Testing, Software Maintenance, Software Metrics, and Software Project Management.
+  </p></li>
+  <li><h6 class="resource-subheading">Web Technologies:</h6>
+  <p>HTML, CSS, JavaScript, PHP, ASP.NET, Web Services, RESTful architecture, XML, JSON, Ajax.
+  </p></li>
+  </ul>
+  <h4 class="resource-heading">Marking Scheme:</h4>
+  <img src="images/cse.png" class="responsive">
+  <h4 class="resource-heading">Important Topics and Books:</h4>
+  <img src="images/cseb.png" class="responsive">
+
+  <!--Advanced Resource Box -->
+    <div class="row mt-2" id="advancedResourceBox"></div>
+    <h4 class="resource-heading"></h4>
+    <div class="row mt-2" id="projectsResourceBox"></div>
+    </div>`;
+});
 
 
 
@@ -460,14 +519,6 @@ ARCH.addEventListener("click", (e) => {
     </div>`;
 });
 CDS.addEventListener("click", (e) => {
-  contributionGuidline.style.display = "none";
-  resourceBox1.style.display = "block";
-  resourceBox1.innerHTML = `
-    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading center">To be Updated Soon!</h4>
-    </div>`;
-});
-CSE.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
   resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
