@@ -32,7 +32,7 @@ const GATE = document.getElementById("GATE");
 const ECE = document.getElementById("ECE");
 const CSE = document.getElementById("CSE");
 const EE = document.getElementById("EE");
-
+const SSC = document.getElementById("SSC");
 
 ESE.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
@@ -420,11 +420,125 @@ CSE.addEventListener("click", (e) => {
     </div>`;
 });
 
+SSC.addEventListener("click", (e) => {
+  contributionGuidline.style.display = "none";
+  // resourceBox.style.display = 'none';
+  // resourceBox.style.display = 'block';
 
+  //Method 1
+  resourceBox1.innerHTML = `
+  <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
+  <div class="container mt-3" id="resourceBox1">
+  <!--Beginner Resource Box-->
+  <h4 class="resource-heading">What is SSC-CGL?</h4>
+  <p>SSC CGL (Staff Selection Commission Combined Graduate Level) exam is a national-level competitive exam conducted by the Staff Selection Commission for the recruitment of candidates in various government organizations and departments. The exam is conducted in four tiers, with the first two being conducted in online mode and the next two being conducted in offline mode.
+  </p>
+  <h4 class="resource-heading">Exam Pattern:</h4>
+  <p>The SSC CGL examination is conducted in four tiers:</p>
+  <ol type="1">
+  <li><b>Tier 1:</b> Computer-based Examination (Objective Multiple Choice Questions)</li>
+  <li><b>Tier 2:</b> Computer-based Examination (Objective Multiple Choice Questions)</li>
+  <li><b>Tier 3:</b> Pen and Paper Mode (Descriptive Paper in English/Hindi)</li>
+  <li><b>Tier 4:</b> Computer Proficiency Test/Skill Test (wherever applicable)</li>
+  </ol>
+  <h7 class="resource-heading">Tier 1:</h7>
+  <ul style="list-style-type:disc;">
+    <li>Mode of Exam: Online</li>
+    <li>Duration: 60 minutes</li>
+    <li>Total Questions: 100</li>
+    <li>Maximum Marks: 200</li>
+    <li>Marking Scheme: Each question carries 2 marks and there is a negative marking of 0.50 marks for each wrong answer.</li>
+    <li>Subjects and Questions:<br>
+      1. <b>General Intelligence and Reasoning:</b> 25 questions<br>
+      2. <b>General Awareness:</b> 25 questions<br>
+      3. <b>Quantitative Aptitude:</b> 25 questions<br>
+      4. <b>English Comprehension:</b> 25 questions<br></li>
+  </ul>
+  <br>
+  <h7 class="resource-heading">Tier 2:</h7>
+  <ul style="list-style-type:disc;">
+    <li>Mode of Exam: Online</li>
+    <li>Duration: 120 minutes (Each paper)</li>
+    <li>Total Questions: 500 (In both papers)</li>
+    <li>Maximum Marks: 800 (In both papers)</li>
+    <li>Marking Scheme: Each question carries 2 marks and there is a negative marking of 0.25 marks for each wrong answer.</li>
+    <li>Subjects and Questions:<br>
+      <b>Paper 1 -</b> Quantitative Abilities: 100 questions<br>
+      <b>Paper 2 -</b> English Language and Comprehension: 200 questions<br>
+      <b>Paper 3 -</b> Statistics (for Junior Statistical Officer): 100 questions<br>
+      <b>Paper 4 -</b> General Studies (Finance and Economics for Assistant Audit Officer/Assistant Accounts Officer): 100 questions<br></li>
+  </ul>
+  <br>
+  <h7 class="resource-heading">Tier 3:</h7>
+  <ul style="list-style-type:disc;">
+    <li>Mode of Exam: Offline (Pen and Paper Mode)</li>
+    <li>Duration: 60 minutes</li>
+    <li>Maximum Marks: 100</li>
+    <li>Subjects: Descriptive Paper in English/Hindi (Writing of Essay, Precis, Letter, Application, etc.)</li>
+  </ul>
+  <br>
+  <h7 class="resource-heading">Tier 4:</h7>
+  <ul style="list-style-type:disc;">
+    <li>Mode of Exam: Computer-based (Wherever applicable)</li>
+    <li>Duration: Depends on the test</li>
+    <li>Subjects: Computer Proficiency Test/Skill Test</li>
+  </ul>
+  <br>
+  <h4 class="resource-heading">Eligibilty:</h4>
+  <p>The eligibility criteria for the SSC CGL exam are as follows:<br>
+  <ul>
+    <li>
+    <b>Nationality:</b> The candidate must be either:<br>
+    1. A citizen of India<br>
+    2. A subject of Nepal/Bhutan<br>
+    3. A Tibetan refugee who came over to India before January 1, 1962, with the intention of permanently settling in India<br>
+    4. A person of Indian origin who has migrated from Pakistan, Burma, Sri Lanka, East African countries of Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam with the intention of permanently settling in India.<br></p>
+    </li>
+    <li><b>Age Limit:</b> The candidate should be between 18 and 32 years of age. Age relaxations are provided for candidates belonging to certain categories.</li>
+    <li><b>Educational Qualification:</b> The candidate must possess a bachelor's degree in any discipline from a recognized university/institute. The educational qualification varies according to the post applied for.</li>
+    <li><b>Physical Standards:</b> Certain posts under SSC CGL require specific physical standards, which vary based on the post applied for.</li>
+  </ul><br>
+  <p>
+  Nationality, age limit, and educational qualification are the general eligibility criteria for SSC CGL. Candidates are advised to refer to the official notification for specific details regarding eligibility criteria, including educational qualifications required for different posts, and physical standards required for specific posts.
+  </p>
+
+  <h4 class="resource-heading">Important Books:</h4><br>
+  <h7 class="resource-heading">English:</h7><br>
+  <img src="images/ssc-eng.png" class="responsive"><br><br><br>
+  <h7 class="resource-heading">Maths:</h7><br>
+  <img src="images/ssc-math.png" class="responsive"><br><br><br>
+  <h7 class="resource-heading">Reasoning:</h7><br>
+  <img src="images/ssc-reas.png" class="responsive"><br><br><br>
+  <h7 class="resource-heading">General Awareness:</h7><br>
+  <img src="images/ssc-gen.png" class="responsive">
+  <br>
+  
+  <h4 class="resource-heading">Preparation Tips:</h4>
+  <ol>
+    <li>Knowing the syllabus and preparing is not enough. It is necessary to know the approach required for each topic/ subject. Thus, the candidates should check the subject-specific preparation strategies shared by toppers and see what works for them.</li>
+    <li>While preparing for any topic, they must make short and summarised notes that will help them revise right before the exams.</li>
+    <li>It is to go through daily newspapers, magazines and journals. They will help with Current Affairs, as well as improve their English Language and vocabulary.</li>
+    <li>Downloading previous year questions papers and solving them in a time-constrained manner helps candidates in time management.</li>
+    <li>They can also download answer keys and evaluate their answers. While calculating their score, they must keep negative marking in mind.</li>
+  </ol>
+  <!--Intermediate Resource Box -->
+  <div class="row mt-2" id="intermediateResourceBox"></div>
+  <!--Advanced Resource Box -->
+  <div class="row mt-2" id="advancedResourceBox"></div>
+  <h4 class="resource-heading"></h4>
+  <div class="row mt-2" id="projectsResourceBox"></div>
+  </div>`;
+
+  resourceBox1.style.display = "block";
+
+  // Method 2
+  //else use this >>
+  // resourceBox2.style.display = 'block';
+  // resourceBox1.style.display = 'none';
+});
 
 // ************************************************************************************
 // ********************************************************Incomplete Section********************************************************
-const SSC = document.getElementById("SSC");
 const CDS = document.getElementById("CDS");
 const AFCAT = document.getElementById("AFCAT");
 const ME = document.getElementById("ME");
@@ -437,14 +551,6 @@ const ESECE = document.getElementById("ESECE");
 const resourceBox1 = document.getElementById("resourceBox1");
 const resourceBox2 = document.getElementById("resourceBox2");
 
-SSC.addEventListener("click", (e) => {
-  contributionGuidline.style.display = "none";
-  resourceBox1.style.display = "block";
-  resourceBox1.innerHTML = `
-    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading center">To be Updated Soon!</h4>
-    </div>`;
-});
 CDS.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
   resourceBox1.style.display = "block";
