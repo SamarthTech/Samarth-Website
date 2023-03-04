@@ -471,17 +471,17 @@ SSC.addEventListener("click", (e) => {
   <br>
   <h7 class="resource-heading">Tier 3:</h7>
   <ul style="list-style-type:disc;">
-    <li>Mode of Exam: Offline (Pen and Paper Mode)</li>
-    <li>Duration: 60 minutes</li>
-    <li>Maximum Marks: 100</li>
-    <li>Subjects: Descriptive Paper in English/Hindi (Writing of Essay, Precis, Letter, Application, etc.)</li>
+    <li><b>Mode of Exam:</b> Offline (Pen and Paper Mode)</li>
+    <li><b>Duration:</b> 60 minutes</li>
+    <li><b>Maximum Marks:</b> 100</li>
+    <li><b>Subjects:</b> Descriptive Paper in English/Hindi (Writing of Essay, Precis, Letter, Application, etc.)</li>
   </ul>
   <br>
   <h7 class="resource-heading">Tier 4:</h7>
   <ul style="list-style-type:disc;">
-    <li>Mode of Exam: Computer-based (Wherever applicable)</li>
-    <li>Duration: Depends on the test</li>
-    <li>Subjects: Computer Proficiency Test/Skill Test</li>
+    <li><b>Mode of Exam:</b> Computer-based (Wherever applicable)</li>
+    <li><b>Duration:</b> Depends on the test</li>
+    <li><b>Subjects:</b> Computer Proficiency Test/Skill Test</li>
   </ul>
   <br>
   <h4 class="resource-heading">Eligibilty:</h4>
