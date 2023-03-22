@@ -33,6 +33,8 @@ const ECE = document.getElementById("ECE");
 const CSE = document.getElementById("CSE");
 const EE = document.getElementById("EE");
 const SSC = document.getElementById("SSC");
+const ESME = document.getElementById("ESEME");
+const CE = document.getElementById("CE");
 
 ESE.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
@@ -144,6 +146,160 @@ UPSC.addEventListener("click", (e) => {
     <div class="row mt-2" id="projectsResourceBox"></div>
     </div>`;
 
+  resourceBox1.style.display = "block";
+
+  // Method 2
+  //else use this >>
+  // resourceBox2.style.display = 'block';
+  // resourceBox1.style.display = 'none';
+});
+
+ESME.addEventListener( "click" , (e)=>{
+  contributionGuidline.style.display = "none";
+  //resourceBox.style.display = "none";
+  //resourceBox.style.display = "block";
+
+  //Method 1
+  resourceBox1.innerHTML = `
+  <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
+  <div class="container mt-3" id="resourceBox1">
+  <!--Beginner Resource Box-->
+  <h4 class="resource-heading">UPSC Mechanical Syllabus:</h4>
+  <p>The UPSC Mechanical Engineering syllabus covers various topics related to mechanical engineering. Here is the syllabus for the UPSC Mechanical Engineering exam:
+  </p>
+  <div class="row" id="beginnerResourceBox"></div>
+  <h6 class="resource-subheading">1.Engineering Mechanics:</h6>
+  <p>Force systems, Equilibrium, Friction, Dynamics, Kinematics, and Kinetics of particles and rigid bodies. 
+  </p>
+  <h6 class="resource-subheading">2.Strength Of Materials:</h6>
+  <p>Stress and strain, Elastic constants, Poisson's ratio, Thermal stresses, Bending moment and shear force diagrams, Theory of bending and torsion. 
+  </p>
+  <h6 class="resource-subheading">3.Theory Of Machines:</h6>
+  <p>Kinematics and dynamics of machines, Cams, Gears, Flywheels, Governors, Balancing of reciprocating and rotating masses
+  </p>
+  <h6 class="resource-subheading">4.Design Of Machine Elements:</h6>
+  <p>Design of Joints, Bearings, Shafts, Spur gears, and Belt drives 
+  </p>
+  <h6 class="resource-subheading">5.Manufacturing Technology:</h6>
+  <p>Metal casting, Metal Forming, Machining, Joining processes, Non-traditional manufacturing processes, Computer Integrated Manufacturing. 
+  </p>
+  <h6 class="resource-subheading">6.Industrial Engineering:</h6>
+  <p>Production planning and control, Work study, Facilities Planning, Quality control, Operation research, Inventory control. 
+  </p>
+  <h6 class="resource-subheading">7.Thermodynamics:</h6>
+  <p>Thermodynamic systems and processes, Laws of Thermodynamics, Open and closed systems, Heat transfer, Refrigeration, and Air Conditioning. 
+  </p>
+  <h6 class="resource-subheading">8.Heat Transfer:</h6>
+  <p>Modes of heat transfer, Conduction, Convection, Radiation, Heat exchangers, Heat transfer by fins. 
+  </p>
+  <h6 class="resource-subheading">9.Material science:</h6>
+  <p>Mechanical properties and testing, Heat treatment, Ferrous and non-ferrous metals, Ceramic, and composite materials. 
+  </p>
+  <h4 class="resource-heading">Booklist for Mechanical Engineering Optional For UPSC:</h4>
+  <p>1.Fundamentals of Classed Thermodynamics - Van Wylen
+     2.Engineering Heat Transfer - Gupta Prakash
+     3.Energy Conversion - Sukhalmoy
+     4.Environmental Pollution Central Engineering C S Rao
+     5.Surveying and Levelling - T P Kanetakar
+     6.Heat Conversion - Arora & Kundwar
+     7.Manufacturing Science - R K Jain
+     8.Thermodynamics - R Yadav Theory of Mechanics - S S Rattan
+     9.Theory of Mechanism and Mechanics - Jagdish Lal.
+     10.Engineering Mechanics of Solids - Popov E
+     11.Manufacturing Science - Ghosh and Malik
+     12.Manufacturing Technology - P N Rao
+     13.Production Management - R K Jain
+     14.Principles of Manufacturing Material & Process - Campbeu 
+     15.Heat and Mass Transfer - R. Yadav
+  </p>
+    <h4 class="resource-heading">Preparation Strategy for UPSC Mechanical Engineering Optional:</h4>
+    <p>
+    1.Step zero should be to get a hang of what kind of questions are being asked in the examination. Refer to the previous year’s papers and analyze them thoroughly. This will give you an idea of what exactly you need to prepare and the depth of knowledge you should have.
+    2.Next, go for studying the theoretical aspects of the syllabus from the standard books and notes that are available. You can leverage NPTEL lectures and Made easy notes to cover this part.
+    3.Then, go for solving numerical problems. Start with solving solved examples from standard textbooks. Once you have done that, go for solving the numerical from previous year papers.
+    4.The next and the most important part of the preparation strategy is the thorough revision that you should incorporate into your preparation on a daily, weekly, and monthly basis. Try to revise the entire syllabus at least twice before the Mains examination.
+    </p>
+    <!--Intermediate Resource Box -->
+    <div class="row mt-2" id="intermediateResourceBox"></div>
+    <!--Advanced Resource Box -->
+    <div class="row mt-2" id="advancedResourceBox"></div>
+    <h4 class="resource-heading"></h4>
+    <div class="row mt-2" id="projectsResourceBox"></div>
+    </div>
+  `;
+
+  resourceBox1.style.display = "block";
+
+  // Method 2
+  //else use this >>
+  // resourceBox2.style.display = 'block';
+  // resourceBox1.style.display = 'none';
+});
+
+CE.addEventListener( "click" , (e)=>{
+  contributionGuidline.style.display = "none";
+  //resourceBox.style.display = "none";
+  //resourceBox.style.display = "block";
+
+  //Method 1
+  resourceBox1.innerHTML = `
+  <!--div class="container mt-3" id="resourceBox1" style=" background: white;"-->
+  <div class="container mt-3" id="resourceBox1">
+  <!--Beginner Resource Box-->
+  <h4 class="resource-heading">Gate Civil Syllabus :</h4>
+  <p>The GATE Civil Engineering syllabus covers various topics related to civil engineering. Here is the syllabus for the GATE Civil Engineering paper:
+  </p>
+  <div class="row" id="beginnerResourceBox"></div>
+  <h6 class="resource-subheading">1.Engineering Mathematics:</h6>
+  <p>Linear Algebra, Calculus, Differential Equations, Probability and Statistics, and Numerical Methods. 
+  </p>
+  <h6 class="resource-subheading">2.Structural Engineering:</h6>
+  <p>Mechanics, Structural Analysis, Concrete Structures, Steel Structures 
+  </p>
+  <h6 class="resource-subheading">3.Geotechnical Engineering:</h6>
+  <p>Soil Mechanics, Foundation Engineering
+  </p>
+  <h6 class="resource-subheading">4.Water Resources Engineering:</h6>
+  <p>Fluid Mechanics, Hydraulics, Hydrology, Irrigation, Water Supply Engineering, Environmental Engineering 
+  </p>
+  <h6 class="resource-subheading">5.Environmental Engineering:</h6>
+  <p>Water and wastewater treatment, Air Pollution, Municipal Solid Wastes, Noise Pollution 
+  </p>
+  <h6 class="resource-subheading">6.Transportation Engineering:</h6>
+  <p>Highway Planning and Design, Traffic Engineering 
+  </p>
+  <h4 class="resource-heading">GATE Examination Pattern</h4>
+  <p>
+  Application form for GATE is released in tentatively in September first week in online mode. The GATE exam 2023 will be conducted online as a computer based test across various test cities of India and abroad.
+  </p>
+  <table style="border:1px solid black">
+  <tr style="border:1px solid black"><th style="border:1px solid black"> Particulars </th> <th style="border:1px solid black"> Details </th> </tr>  
+  <tr style="border:1px solid black"><th style="border:1px solid black"> Number of Questions in Paper </th> <th style="border:1px solid black"> 65 </th> </tr>  
+  <tr style="border:1px solid black"><th style="border:1px solid black"> Number of Sections </th><th style="border:1px solid black"> Section 1- General Aptitude, Section 2 - Mathematics and Civil Engineering </th> </tr>  
+  <tr style="border:1px solid black"><th style="border:1px solid black"> Topic-wise weightage </th><th style="border:1px solid black"> General Aptitude 15%Mathematics - 13%Civil Engineering- 72% </th> </tr>  
+  <tr style="border:1px solid black"><th style="border:1px solid black"> Pattern of Questions </th><th style="border:1px solid black"> Multiple Choice Question (MCQs) and Numerical Answer Type Questions (NAT) </th> </tr>  
+  <tr style="border:1px solid black"><th style="border:1px solid black"> Duration of Exam </th><th style="border:1px solid black"> 3 Hours </th> </tr>  
+  <tr style="border:1px solid black"><th style="border:1px solid black"> Marking Scheme </th><th style="border:1px solid black"> Test Paper have questions carrying 1 mark and 2 marks⅓ negative mark for incorrect answer </th> </tr>  
+  </table>
+  <h3 class="resource-heading">Books for GATE Civil Engineering</h3>
+  <table>
+  <tr style="border:1px solid black"><th style="border:1px solid black">Sections</th><th style="border:1px solid black">Important Topics</th><th style="border:1px solid black">GATE Civil Engineering Books</th></tr>
+  <tr style="border:1px solid black"><th style="border:1px solid black">Engineering Mathematics</th><th style="border:1px solid black">Linear AlgebraCalculusComplex AnalysisDifferential EquationsProbability and Statistics</th><th style="border:1px solid black">Discrete Mathematics and Its Applications by Kenneth RosenHigher Engineering mathematics by B.S. GrewalAdvanced Engineering Mathematics by Erwin Kreyszig</th></tr>
+  <tr style="border:1px solid black"><th style="border:1px solid black">Structural Engineering</th><th style="border:1px solid black">Statically Determinate and Indeterminate Structures by Force/Energy MethodsMethod of SuperpositionAnalysis of TrussesStructural Analysis with all its Methods</th><th style="border:1px solid black">Theory of Structure by CK Wang, S. Rammamrutham, L.S. Negi & JangitTheory of Elasticity by Timoshenko & GereTheory of Structure by Wilbur & NorrisStrength of Materials/Mechanics of Structure by Gere & Timoshenko,E. Popove, L. Singer,B.C. Punamia, Rammamrutham</th></tr>
+  <tr style="border:1px solid black"><th style="border:1px solid black">Geotechnical Engineering</th><th style="border:1px solid black">Basic Properties and Classification of SoilsConsolidationPermeabilitySeepageShear Strength of SoilStability Analysis of SlopesBearing CapacityFoundation EngineeringConcrete Technology</th><th style="border:1px solid black">Soil Mechanics by Gopal Ranjan & Rao,Venkat Ramaiha,S. K. Garg,B.C. Punamia, V N S Murthy</th></tr>
+  <tr style="border:1px solid black"><th style="border:1px solid black">Water Resource Engineering</th><th style="border:1px solid black">Fluid StaticsKinematicsDynamicsLaminar – Turbulent FlowFlow Through PipesOpen Channel Flow HydraulicsBL TheoryDimension AnalysisHydraulic PumpsHydrologic CycleGround Water Hydrology</th><th style="border:1px solid black">Water Resources by S K GargWater and Waste Water by SK Garg 1 and 2Fluid Mechanics- RK Bansal and Fox and Richard</th></tr>
+  <tr style="border:1px solid black"><th style="border:1px solid black">Transportation Engineering</th><th style="border:1px solid black">Highway EngineeringTransportation InfrastructureGeometric Design of Railway TrackHighway PavementsTraffic Engineering</th><th style="border:1px solid black">Transportation by Justo Khanna</th></tr>
+  <tr style="border:1px solid black"><th style="border:1px solid black">Environmental Engineering</th><th style="border:1px solid black">Quality StandardsDomestic Wastewater TreatmentWater and Waste Water DisposalAir PollutionMeteorologyNoise PollutionMunicipal Solid WasteQuality and Characteristics of SewageTreatment of Sewage</th><th style="border:1px solid black">Environmental Engineering by S. K. Garg Part I & Part IIWaste Water Engineering by B. C. Punmia Part I & Part II</th></tr>
+  <tr style="border:1px solid black"><th style="border:1px solid black">Geomatics Engineering</th><th style="border:1px solid black">Basics of Geographical Information System (GIS)Geographical Positioning System (GPS)Linear MeasurementsCompass SurveyLeveling</th><th style="border:1px solid black">Surveying (vol. 1,2,3) by B.C.Punmia, Ashok Jain, Arun Jain</th></tr>
+</table>
+    <!--Intermediate Resource Box -->
+    <div class="row mt-2" id="intermediateResourceBox"></div>
+    <!--Advanced Resource Box -->
+    <div class="row mt-2" id="advancedResourceBox"></div>
+    <h4 class="resource-heading"></h4>
+    <div class="row mt-2" id="projectsResourceBox"></div>
+    </div>
+  `;
   resourceBox1.style.display = "block";
 
   // Method 2
@@ -542,9 +698,8 @@ SSC.addEventListener("click", (e) => {
 const CDS = document.getElementById("CDS");
 const AFCAT = document.getElementById("AFCAT");
 const ME = document.getElementById("ME");
-const CE = document.getElementById("CE");
+
 const ARCH = document.getElementById("ARCH");
-const ESEME = document.getElementById("ESEME");
 const ESEEE = document.getElementById("ESEEE");
 const ESEECE = document.getElementById("ESEECE");
 const ESECE = document.getElementById("ESECE");
@@ -560,14 +715,6 @@ CDS.addEventListener("click", (e) => {
     </div>`;
 });
 AFCAT.addEventListener("click", (e) => {
-  contributionGuidline.style.display = "none";
-  resourceBox1.style.display = "block";
-  resourceBox1.innerHTML = `
-    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading center">To be Updated Soon!</h4>
-    </div>`;
-});
-ESEME.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
   resourceBox1.style.display = "block";
   resourceBox1.innerHTML = `
@@ -600,14 +747,7 @@ ESECE.addEventListener("click", (e) => {
     </div>`;
 });
 
-CE.addEventListener("click", (e) => {
-  contributionGuidline.style.display = "none";
-  resourceBox1.style.display = "block";
-  resourceBox1.innerHTML = `
-    <div class="container mt-3" id="resourceBox1" style="/* background: green;*/">
-      <h4 class="resource-heading center">To be Updated Soon!</h4>
-    </div>`;
-});
+
 ME.addEventListener("click", (e) => {
   contributionGuidline.style.display = "none";
   resourceBox1.style.display = "block";
