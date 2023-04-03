@@ -494,7 +494,7 @@
 
 /* Loader
   .loader {
-    background-image: linear-gradient(-150deg, #efac78, cyan);
+    background-image: linear-gradient(-150deg, #FD0000, cyan);
     position:fixed;
     /* display: block;
     z-index:101 !important;
@@ -3730,8 +3730,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #212529;
-  background-color: #78d5ef;
-  border-color: #78d5ef;
+  background-color: rgb(255, 193, 7, 0.5);
+  border-color: rgb(255, 193, 7, 0.5);
 }
 
 .btn-primary:hover {
@@ -11324,12 +11324,12 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #ee76ad;
+  color: #E77510;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ee76ad;
+  color: #E77510;
 }
 
 h1,
@@ -11348,7 +11348,7 @@ h5,
 }
 
 .text-primary {
-  color: #ee76ad !important;
+  color: #E77510 !important;
 }
 
 .ftco-navbar-light {
@@ -11475,7 +11475,7 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item.cta.cta-colored span {
-  border-color: #ee76ad;
+  border-color: #E77510;
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item.active>a {
@@ -11505,12 +11505,12 @@ h5,
 }
 
 .ftco-navbar-light.scrolled .nav-item.active>a {
-  color: #ee76ad !important;
+  color: #E77510 !important;
 }
 
 .ftco-navbar-light.scrolled .nav-item.cta>a {
   color: #fff !important;
-  background: #ee76ad;
+  background: #E77510;
   border: none !important;
   padding-top: 0.5rem !important;
   padding-bottom: .5rem !important;
@@ -11529,7 +11529,7 @@ h5,
 }
 
 .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
-  border-color: #ee76ad;
+  border-color: #E77510;
 }
 
 @media (max-width: 991.98px) {
@@ -11567,7 +11567,7 @@ h5,
 }
 
 .ftco-navbar-light.scrolled .nav-link.active {
-  color: #ee76ad !important;
+  color: #E77510 !important;
 }
 
 .ftco-navbar-light.scrolled.awake {
@@ -11625,12 +11625,12 @@ h5,
 #particles-js {
   position: absolute;
   /* background: #00FFFF;
-  background: -moz-linear-gradient(45deg, #00FFFF 0%, #efac78 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #00FFFF), color-stop(100%, #efac78));
-  background: -webkit-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-  background: -o-linear-gradient(45deg, #00FFFF 0%, #efac78 100%);
-  background: -ms-linear-gradient(45deg, #00FFFF 0%, #efac78 100%);
-  background: linear-gradient(45deg, #00FFFF 0%, #efac78 100%);
+  background: -moz-linear-gradient(45deg, #00FFFF 0%, #FD0000 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #00FFFF), color-stop(100%, #FD0000));
+  background: -webkit-linear-gradient(45deg, #E77510 0%, #FD0000 100%);
+  background: -o-linear-gradient(45deg, #00FFFF 0%, #FD0000 100%);
+  background: -ms-linear-gradient(45deg, #00FFFF 0%, #FD0000 100%);
+  background: linear-gradient(45deg, #00FFFF 0%, #FD0000 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#448ef6', endColorstr='#af05a9', GradientType=10); */
   top: 0;
   left: 0;
@@ -11777,7 +11777,7 @@ h5,
 }
 
 .owl-carousel .owl-dots .owl-dot.active {
-  background: #efac78;
+  background: #FD0000;
 }
 
 .owl-carousel:hover .owl-nav .owl-prev,
@@ -11816,7 +11816,7 @@ h5,
 }
 
 .bg-primary {
-  background: #ee76ad;
+  background: #E77510;
 }
 
 .btn {
@@ -11838,24 +11838,24 @@ h5,
 .btn.btn-primary {
   background: #fce7f1;
   border: 2px solid #fce7f1;
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .btn.btn-primary:hover {
-  border: 2px solid #ee76ad;
+  border: 2px solid #E77510;
   background: transparent;
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .btn.btn-primary.btn-outline-primary {
-  border: 2px solid #ee76ad;
+  border: 2px solid #E77510;
   background: transparent;
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .btn.btn-primary.btn-outline-primary:hover {
   border: 2px solid transparent;
-  background: #ee76ad;
+  background: #E77510;
   color: #fff;
 }
 
@@ -11875,7 +11875,7 @@ h5,
 .btn.btn-outline-white:active {
   background: #fff;
   border-color: #fff;
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .ftco-section-featured {
@@ -11894,7 +11894,7 @@ h5,
 
 .ftco-section-featured .heading-section h2 strong {
   font-weight: 700;
-  color: #efac78;
+  color: #FD0000;
   background: #fdf2ea;
 }
 
@@ -12045,7 +12045,7 @@ h5,
 }
 
 .services .icon.color-1 span {
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .services .icon.color-1:before {
@@ -12071,7 +12071,7 @@ h5,
 }
 
 .services .icon.color-2 span {
-  color: #efac78;
+  color: #FD0000;
 }
 
 .services .icon.color-2:before {
@@ -12172,13 +12172,13 @@ h5,
   background-position: center center;
   position: relative;
   padding: 10em 0;
-  background: #ee76ad;
-  background: -moz-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #ee76ad), color-stop(100%, #efac78));
-  background: -webkit-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-  background: -o-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-  background: -ms-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-  background: linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
+  background: #E77510;
+  background: -moz-linear-gradient(45deg, #E77510 0%, #FD0000 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #E77510), color-stop(100%, #FD0000));
+  background: -webkit-linear-gradient(45deg, #E77510 0%, #FD0000 100%);
+  background: -o-linear-gradient(45deg, #E77510 0%, #FD0000 100%);
+  background: -ms-linear-gradient(45deg, #E77510 0%, #FD0000 100%);
+  background: linear-gradient(45deg, #E77510 0%, #FD0000 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#448ef6', endColorstr='#af05a9', GradientType=1);
 }
 
@@ -12510,7 +12510,7 @@ textarea.form-control {
 }
 
 .bg-primary {
-  background: #ee76ad !important;
+  background: #E77510 !important;
 }
 
 .ftco-section .ftco-sub-title {
@@ -12535,7 +12535,7 @@ textarea.form-control {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 0;
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .media-custom .media-body .position {
@@ -12572,7 +12572,7 @@ footer h5{
 
 .ftco-footer {
   font-size: 16px;
-  background: #ee76ad;
+  background: #E77510;
   padding: 2.5em 0 0 0;
 }
 
@@ -12680,7 +12680,7 @@ footer h5{
 
 .footer-small-nav>li a:hover,
 .footer-small-nav>li a:focus {
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .media .ftco-icon {
@@ -12688,7 +12688,7 @@ footer h5{
 }
 
 .media .ftco-icon span {
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .ftco-media {
@@ -12722,7 +12722,7 @@ footer h5{
 .ftco-media .icon {
   font-size: 50px;
   display: block;
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .ftco-media.text-center .ftco-icon {
@@ -12878,14 +12878,14 @@ footer h5{
 }
 
 .testimony-wrap .user-img .quote i {
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .testimony-wrap .name {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 0;
-  color: #efac78;
+  color: #FD0000;
 }
 
 .testimony-wrap .position {
@@ -12923,11 +12923,11 @@ footer h5{
 }
 
 .ftco-counter {
-  background: rgb(238, 174, 202);
-  background: -moz-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(38, 112, 200, 1) 100%);
-  background: -webkit-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(38, 112, 200, 1) 100%);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(38, 112, 200, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#2670c8", GradientType=1);
+  background: rgb(241, 165, 56);
+  background: -moz-radial-gradient(circle, rgba(241, 165, 56, 1) 0%, rgba(218, 58, 41, 1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(241, 165, 56, 1) 0%, rgba(218, 58, 41, 1) 100%);
+  background: radial-gradient(circle, rgba(241, 165, 56, 1) 0%, rgba(218, 58, 41, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F1A538", endColorstr="#DA3A29", GradientType=1);
   /* clip-path: polygon(20% 0%, 80% 0%, 93% 20%, 93% 80%, 80% 100%, 20% 100%, 7% 80%, 7% 20%); */
   /* clip-path: polygon(50% 0%, 80% 10%, 100% 0, 100% 100%, 80% 90%, 50% 100%, 20% 90%, 0 100%, 0 0, 20% 10%); */
   clip-path: polygon(13% 0, 100% 0, 100% 85%, 89% 100%, 0 100%, 0 15%);
@@ -12955,7 +12955,7 @@ footer h5{
   display: block;
   font-size: 72px;
   font-weight: bold;
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .ftco-counter .ftco-label {
@@ -13020,7 +13020,7 @@ footer h5{
 .blog-entry .text .heading a:hover,
 .blog-entry .text .heading a:focus,
 .blog-entry .text .heading a:active {
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .blog-entry .text .meta-chat {
@@ -13181,8 +13181,8 @@ footer h5{
 
 .block-17 form .search-submit {
   width: 100%;
-  background: #ee76ad;
-  border: 2px solid #ee76ad;
+  background: #E77510;
+  border: 2px solid #E77510;
   color: #fff;
   padding: 12px 10px;
   -webkit-border-radius: 4px;
@@ -13222,7 +13222,7 @@ footer h5{
 
 .block-27 ul li a,
 .block-27 ul li span {
-  color: #ee76ad;
+  color: #E77510;
   text-align: center;
   display: inline-block;
   width: 40px;
@@ -13235,7 +13235,7 @@ footer h5{
 .block-27 ul li.active a,
 .block-27 ul li.active span {
   background: #fce7f1;
-  color: #ee76ad;
+  color: #E77510;
   border: 1px solid transparent;
 }
 
@@ -13340,9 +13340,9 @@ footer h5{
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  background: #ee76ad;
+  background: #E77510;
   color: #fff;
-  border: 1px solid #ee76ad;
+  border: 1px solid #E77510;
 }
 
 .block-8 .accordion-item .heading>a[aria-expanded="false"]:before {
@@ -13430,7 +13430,7 @@ footer h5{
 }
 
 .block-4 .nonloop .owl-dots .owl-dot.active {
-  background: #ee76ad;
+  background: #E77510;
 }
 
 .contact-section {
@@ -13487,7 +13487,7 @@ footer h5{
 .block-21 .text .heading a:hover,
 .block-21 .text .heading a:active,
 .block-21 .text .heading a:focus {
-  color: #ee76ad;
+  color: #E77510;
 }
 
 .block-21 .text .meta>div {
@@ -13539,7 +13539,7 @@ footer h5{
   margin: 0;
   border-radius: 50% !important;
   font-size: 16px;
-  background: #ee76ad;
+  background: #E77510;
   color: #fff;
 }
 
