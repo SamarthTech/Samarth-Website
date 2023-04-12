@@ -494,7 +494,7 @@
 
 /* Loader
   .loader {
-    background-image: linear-gradient(-150deg, #FD0000, cyan);
+    background-image: linear-gradient(-150deg, #FFA500, cyan);
     position:fixed;
     /* display: block;
     z-index:101 !important;
@@ -11894,7 +11894,7 @@ h5,
 
 .ftco-section-featured .heading-section h2 strong {
   font-weight: 700;
-  color: #FD0000;
+  color: #FFA500;
   background: #fdf2ea;
 }
 
@@ -12885,7 +12885,7 @@ footer h5{
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 0;
-  color: #FD0000;
+  color: #FFA500;
 }
 
 .testimony-wrap .position {
@@ -14056,7 +14056,7 @@ font-size: 14px;
 color: #878787;
 }
 
-.gallery-image {
+/*.gallery-image {
   border-radius: 25px;
   padding: 20px;
   display: flex;
@@ -14128,4 +14128,124 @@ color: #878787;
 
 .opacity-low {
   opacity: 0.5;
+}*/
+
+#gallery {
+  padding-top: 40px;
+}
+@media screen and (min-width: 991px) {
+  #gallery {
+    padding: 60px 30px 0 30px;
+  }
+}
+
+.img-wrapper {
+  position: relative;
+  margin-top: 15px;
+}
+.img-wrapper img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.img-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 20px;
+  left: 0;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.img-overlay i {
+  color: #fff;
+  font-size: 3em;
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#overlay img {
+  margin: 0;
+  width: 80%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 5%;
+}
+@media screen and (min-width: 768px) {
+  #overlay img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #overlay img {
+    width: 50%;
+  }
+}
+
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#nextButton:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  #nextButton {
+    font-size: 3em;
+  }
+}
+
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#prevButton:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  #prevButton {
+    font-size: 3em;
+  }
+}
+
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#exitButton:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  #exitButton {
+    font-size: 3em;
+  }
 }
