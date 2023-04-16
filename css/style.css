@@ -712,7 +712,7 @@
 /* *************************************************************************Our team**************************************************************** */
 
 #teachers .testimony-wrap {
-  // background: rgba(255, 246, 246, 0.81);
+   background: rgba(255, 246, 246, 0.81);
   padding-bottom: 2rem !important;
   padding-top: 2rem !important;
 }
@@ -738,7 +738,7 @@
 }
 
 #students .testimony-wrap {
- // background: rgba(255, 246, 246, 0.81);
+  background: rgba(255, 246, 246, 0.81);
   padding-bottom: 2rem !important;
   padding-top: 2rem !important;
 }
@@ -12791,14 +12791,22 @@ footer h5{
   color: rgba(0, 0, 0, 0.2);
 }
 
+
 .heading-section h2 {
   font-size: 38px;
+  font-weight: 700;
+}
+.heading-section h3 {
+  font-size: 30px;
   font-weight: 700;
 }
 
 @media (max-width: 767.98px) {
   .heading-section h2 {
     font-size: 28px;
+  }
+  .heading-section h3 {
+    font-size: 18px;
   }
 }
 
@@ -13045,7 +13053,7 @@ footer h5{
 }
 
 .blog-entry .meta>div a:hover {
-  color: white;
+  color: #E77510;
 }
 
 .block-6 {
