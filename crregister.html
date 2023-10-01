@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -5,21 +6,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
-  <!--New loader Css-->
+  <!-- New loader Css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
-
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
   <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/aos.css">
-
   <link rel="stylesheet" href="css/ionicons.min.css">
-
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
   <link rel="stylesheet" href="css/jquery.timepicker.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -30,33 +27,28 @@
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" type="text/css" href="css/regn.css">
   <link rel="stylesheet" href="/css/footer.css">
-
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <!-- Google Fonts -->
-
   <script>
     window.console = window.console || function (t) { };
   </script>
-
   <script>
     if (document.location.search.match(/type=embed/gi)) {
       window.parent.postMessage("resize", "*");
     }
   </script>
-  <!--New loader Css-->
+  <!-- New loader Css -->
+  <style>
+    .error {
+      border: 1px solid red;
+    }
+  </style>
 </head>
 
-
-
 <body>
-
-
-
   <div class="row">
     <div class="col-md-12">
-      <form
-        action=""
-        method="post" name="crform" id="crform">
+      <form action="" method="post" name="crform" id="crform">
         <div class="samarth_logo">
           <img src="images/SamarthBlack.png" alt="logo" width="100">
           <div class="navbar-brand" style="cursor: pointer;">Samarth</div>
@@ -64,84 +56,106 @@
         <h1>Campus Representative Registration</h1>
 
         <fieldset>
-
           <legend><span class="number">1</span>Your Basic Info</legend>
 
           <label for="name">Name:</label>
           <input type="text" id="name" name="Name" required>
 
           <label for="email">Email:</label>
-          <input type="email" id="mail" name="Email" required>
+          <input type="email" id="email" name="Email" required>
 
           <label for="tel">Phone Number:</label>
           <input type="number" id="tel" name="PhoneNo" required>
 
-          <label for="tel">WhatsApp Number:</label>
-          <input type="number" id="tel" name="WhatsAppNo" required>
+          <label for="WhatsAppNo">WhatsApp Number:</label>
+          <input type="number" id="WhatsAppNo" name="WhatsAppNo" required>
 
           <label for="department">Department:</label>
-          <input type="department" id="department" name="dept" required>
+          <input type="text" id="department" name="dept" required>
 
-          <label for="fblink">Facebook Profile:</label>
+          <label for="Facebook">Facebook Profile:</label>
           <input type="text" id="Facebook" name="Facebook" required>
 
-          <label for="iglink">Instagram Profile:</label>
+          <label for="Insta">Instagram Profile:</label>
           <input type="text" id="Insta" name="Insta" required>
 
-          <label for="twlink">Twitter Profile:</label>
+          <label for="Twitter">Twitter Profile:</label>
           <input type="text" id="Twitter" name="Twitter">
 
-          <label for="lklink">LinkedIn Profile:</label>
+          <label for="Linkedin">LinkedIn Profile:</label>
           <input type="text" id="Linkedin" name="Linkedin">
 
           <label for="message">Why do you want to apply?</label>
-          <textarea name="message" id="message" cols="30" rows="10" style="border-radius: 1px;" placeholder="Write your Answer in between 150 to 200 characters" required></textarea>
+          <textarea name="message" id="message" cols="30" rows="10"
+            placeholder="Write your Answer in between 150 to 200 characters" required></textarea>
 
           <label>Year:</label>
-          <input type="radio" id="year1" value="year1" name="year"><label for="year1" class="light">First
-            Year</label><br>
-          <input type="radio" id="year2" value="year2" name="year"><label for="year2" class="light">Second
-            Year</label><br>
-          <input type="radio" id="year3" value="year3" name="year"><label for="year3" class="light">Third
-            Year</label><br>
-          <input type="radio" id="year4" value="year4" name="year"><label for="year4" class="light">Fourth
-            Year</label><br>
+          <input type="radio" id="year1" value="year1" name="year" required><label for="year1"
+            class="light">First Year</label><br>
+          <input type="radio" id="year2" value="year2" name="year" required><label for="year2"
+            class="light">Second Year</label><br>
+          <input type="radio" id="year3" value="year3" name="year" required><label for="year3"
+            class="light">Third Year</label><br>
+          <input type="radio" id="year4" value="year4" name="year" required><label for="year4"
+            class="light">Fourth Year</label><br>
         </fieldset>
         <fieldset>
-
           <legend><span class="number">2</span> Registration Details</legend>
 
           <label for="event">Role:</label>
-          <select id="event" name="event">
+          <select id="event" name="event" required>
             <optgroup label="Campus Representative">
               <option value="campus rep.">Campus Representative</option>
+              <option value="campus rep.">Second Value</option>
+              <option value="campus rep.">Third</option>
             </optgroup>
           </select>
-
         </fieldset>
-
-        <!-- <button type="submit">Register</button> -->
         <button class="button" type="submit">
           <span class="submit">Submit</span>
           <span class="loading"><i class="fa fa-refresh"></i></span>
           <span class="check"><i class="fa fa-check"></i></span>
         </button>
-
       </form>
     </div>
   </div>
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbykTcdSt7ClJeJUWvYofMukjO6QMH6ag2x-48RpNfzdz2SWe3oEVy_A6LP0MqF3iYwW/exec'
-			const form = document.forms['crform']
-		  
-			form.addEventListener('submit', e => {
-			  e.preventDefault()
-			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => alert("Thank you!! Your form is submitted successfully." ))
-				.then(() => {  window.location.reload(); })
-				.catch(error => console.error('Error!', error.message))
-			})
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykTcdSt7ClJeJUWvYofMukjO6QMH6ag2x-48RpNfzdz2SWe3oEVy_A6LP0MqF3iYwW/exec';
+    const form = document.forms['crform'];
+
+    // Add event listener for form submission
+    form.addEventListener('submit', (e) => {
+      e.preventDefault(); // Prevent default form submission
+
+      // Validate the form fields before submitting
+      if (validateForm()) {
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            alert("Thank you!! Your form is submitted successfully.");
+            window.location.reload();
+          })
+          .catch(error => console.error('Error!', error.message));
+      }
+    });
+
+    function validateForm() {
+      const requiredFields = ['name', 'email', 'tel', 'WhatsAppNo', 'department', 'Facebook', 'Insta','message', 'event'];
+      let isValid = true;
+
+      requiredFields.forEach(fieldName => {
+        const inputElement = document.getElementById(fieldName);
+        if (!inputElement.value) {
+          isValid = false;
+          inputElement.classList.add('error'); 
+        } else {
+          inputElement.classList.remove('error');
+        }
+      });
+
+      return isValid;
+    }
   </script>
+
   <script>
     const button = document.querySelector('.button');
     const submit = document.querySelector('.submit');
@@ -153,7 +167,7 @@
     function addClass() {
       this.classList.add('finished');
     }
-    
+
     button.addEventListener('click', toggleClass);
     button.addEventListener('transitionend', toggleClass);
     button.addEventListener('transitionend', addClass);
