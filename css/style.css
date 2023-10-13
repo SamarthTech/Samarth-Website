@@ -648,6 +648,10 @@
       #79ff6c);
   border-radius: 3px;
 }
+#carousel-bg{
+  /* background:rgb(244, 182, 66); */
+  background-color: rgba(222, 130, 0, 0.704);
+}
 
 
 /*
